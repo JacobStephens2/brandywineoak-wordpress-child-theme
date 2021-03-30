@@ -1,0 +1,478 @@
+// Animation
+// ----------------------------------------------
+// body._intro_play {
+//   overflow-y: hidden;
+// }
+
+// .animationOverlay {
+//   width: 100%;
+//   z-index: 9999;
+//   position: absolute;
+//   top: -9999px;
+//   left: -9999px;
+//   overflow: hidden;
+
+//   ._has_js & {
+//     position: fixed;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     top: 0;
+//   }
+// }
+
+// .animationOverlay_background {
+//   background-color: $white;
+//   bottom: 0;
+//   left: 0;
+//   position: absolute;
+//   right: 0;
+//   top: 0;
+//   z-index: 9000;
+//   -webkit-transition: 0.25s ease-in-out;
+//   -moz-transition: 0.25s ease-in-out;
+//   -o-transition: 0.25s ease-in-out;
+//   transition: 0.25s ease-in-out;
+// }
+
+// .animationOverlay_svg {
+//   display: block;
+//   height: 150px;
+//   left: 50%;
+//   position: absolute;
+//   margin: rem-calc(-50) 0 0 rem-calc(-75);
+//   top: 50%;
+//   width: 150px;
+//   z-index: 9500;
+//   -webkit-transform: scale(80);
+//      -moz-transform: scale(80);
+//        -o-transform: scale(80);
+//           transform: scale(80);
+//   -webkit-transform-origin: 39% 39%;
+//      -moz-transform-origin: 39% 39%;
+//        -o-transform-origin: 39% 39%;
+//           transform-origin: 39% 39%;
+
+//   @include breakpoint(medium) {
+//     height: 250px;
+//     margin: rem-calc(-225) 0 0 rem-calc(-140);
+//     width: 250px;
+//   }
+//   @include breakpoint(large) {
+//     margin-left: rem-calc(-150);
+//   }
+
+//   .animating & {
+//     -webkit-transform: scale(1);
+//        -moz-transform: scale(1);
+//          -o-transform: scale(1);
+//             transform: scale(1);
+//   }
+// }
+
+// .animationOverlay_wrap {
+//   height: rem-calc(185);
+//   overflow: hidden;
+//   margin-top: rem-calc(75);
+//   position: relative;
+
+//   @include breakpoint(medium) {
+//     height: 100%;
+//     margin-top: rem-calc(100);
+//     margin-left: rem-calc(30);
+//   }
+
+//   @include breakpoint(xxlarge) {
+//     margin-left: rem-calc(50);
+//     margin-right: auto;
+//   }
+// }
+
+// g#l1,
+// g#l2,
+// g#l3,
+// g#l4 {
+//   -webkit-transform-origin: 50% 50%;
+//   -moz-transform-origin: 50% 50%;
+//   -o-transform-origin: 50% 50%;
+//   transform-origin: 50% 50%;
+//   -webkit-transition: 0.25s ease-in-out;
+//   -moz-transition: 0.25s ease-in-out;
+//   -o-transition: 0.25s ease-in-out;
+//   transition: 0.25s ease-in-out;
+// }
+
+// @keyframes revealLeft {
+//   0% {
+//     -webkit-transform: scaleX(0);
+//     -moz-transform: scaleX(0);
+//     -o-transform: scaleX(0);
+//     transform: scaleX(0);
+//   }
+//   100% {
+//     -webkit-transform: scaleX(1);
+//     -moz-transform: scaleX(1);
+//     -o-transform: scaleX(1);
+//     transform: scaleX(1);
+//   }
+// }
+// @keyframes openLeft {
+//   0% {
+//     -webkit-transform: scale(0);
+//        -moz-transform: scale(0);
+//          -o-transform: scale(0);
+//             transform: scale(0);
+//   }
+//   100% {
+//     -webkit-transform: scale(1);
+//        -moz-transform: scale(1);
+//          -o-transform: scale(1);
+//             transform: scale(1);
+//   }
+// }
+
+// @keyframes rotateLeft {
+//   0% {
+//     -webkit-transform: rotate(0);
+//     -moz-transform: rotate(0);
+//     -o-transform: rotate(0);
+//     transform: rotate(0);
+//   }
+//   40% {
+//     -webkit-transform: rotate(-45deg);
+//     -moz-transform: rotate(-45deg);
+//     -o-transform: rotate(-45deg);
+//     transform: rotate(-45deg);
+//   }
+//   60% {
+//     -webkit-transform: rotate(-45deg);
+//     -moz-transform: rotate(-45deg);
+//     -o-transform: rotate(-45deg);
+//     transform: rotate(-45deg);
+//   }
+//   100% {
+//     -webkit-transform: rotate(-90deg);
+//     -moz-transform: rotate(-90deg);
+//     -o-transform: rotate(-90deg);
+//     transform: rotate(-90deg);
+//   }
+// }
+
+// @keyframes scaleUp {
+//   0% {
+//     -webkit-transition: 0.25s ease-in-out;
+//     -moz-transition: 0.25s ease-in-out;
+//     -o-transition: 0.25s ease-in-out;
+//     transition: 0.25s ease-in-out;
+//     -webkit-transform: scale(1);
+//     -moz-transform: scale(1);
+//     -o-transform: scale(1);
+//     transform: scale(1);
+//   }
+//   100% {
+//     -webkit-transform: scale(80);
+//     -moz-transform: scale(80);
+//     -o-transform: scale(80);
+//     transform: scale(80);
+//   }
+// }
+
+// @keyframes fadeOut {
+//   0% {
+//     opacity: 1;
+//   }
+//   100% {
+//     opacity: 0;
+//   }
+// }
+
+// @keyframes fadeOutFinal {
+//   0% {
+//     -webkit-transform: translateX(0);
+//     -moz-transform: translateX(0);
+//     -o-transform: translateX(0);
+//     transform: translateX(0);
+//   }
+//   100% {
+//     -webkit-transform: translateX(100%);
+//     -moz-transform: translateX(100%);
+//     -o-transform: translateX(100%);
+//     transform: translateX(100%);
+//   }
+// }
+
+// #red-start-1,
+// #red-start-2,
+// #blue-start-1,
+// #blue-start-2 {
+//   -webkit-transform: scaleX(0);
+//   -moz-transform: scaleX(0);
+//   -o-transform: scaleX(0);
+//   transform: scaleX(0);
+//   -webkit-transition: 0.25s ease-in-out;
+//   -moz-transition: 0.25s ease-in-out;
+//   -o-transition: 0.25s ease-in-out;
+//   transition: 0.25s ease-in-out;
+// }
+
+// #red-start-1,
+// #blue-start-1 {
+//   -webkit-transform-origin: 19% center;
+//   -moz-transform-origin: 19% center;
+//   -o-transform-origin: 19% center;
+//   transform-origin: 19% center;
+// }
+
+// #red-start-2,
+// #blue-start-2 {
+//   -webkit-transform-origin: 52% center;
+//   -moz-transform-origin: 52% center;
+//   -o-transform-origin: 52% center;
+//   transform-origin: 52% center;
+// }
+
+// #goldScale {
+//   -webkit-transition: 0.25s ease-in-out;
+//   -moz-transition: 0.25s ease-in-out;
+//   -o-transition: 0.25s ease-in-out;
+//   transition: 0.25s ease-in-out;
+//   -webkit-transform-origin: center center;
+//   -moz-transform-origin: center center;
+//   -o-transform-origin: center center;
+//   transform-origin: center center;
+//   opacity: 0;
+// }
+
+// .animating {
+//   #red-start-1 {
+//     animation: revealLeft 0.2s 1s ease-in-out forwards;
+//   }
+
+//   #blue-start-1 {
+//     animation: revealLeft 0.2s 1.15s ease-in-out forwards;
+//   }
+//   #red-start-2 {
+//     animation: revealLeft 0.2s 1.3s ease-in-out forwards;
+//   }
+//   #blue-start-2 {
+//     animation: revealLeft 0.2s 1.45s ease-in-out forwards;
+//   }
+
+//   #l2,
+//   #l4 {
+//     animation: rotateLeft 1.5s 2s ease-in-out forwards;
+//   }
+
+//   .animationOverlay_svg  {
+//     animation: scaleUp 0.5s 3.5s ease-in-out forwards;
+//   }
+
+//   .animationOverlay_background {
+//     animation: fadeOut 0.5s 4.5s ease-in-out forwards;
+//   }
+//   &.animationOverlay {
+//     animation: fadeOutFinal 0.5s 5s ease-in-out forwards;
+//   }
+// }
+
+// ._scroll_animate {
+
+//   .scrollView--callout {
+//     overflow: hidden;
+
+//     .calloutBlock {
+//       margin-bottom: 0;
+//       &:before,
+//       &:after {
+//         -webkit-transform: scaleX(0);
+//         -moz-transform: scaleX(0);
+//         -o-transform: scaleX(0);
+//         transform: scaleX(0);
+//         -webkit-transform-origin: left center;
+//         -moz-transform-origin: left center;
+//         -o-transform-origin: left center;
+//         transform-origin: left center;
+//         -webkit-transition: 0.5s ease-in-out;
+//         -moz-transition: 0.5s ease-in-out;
+//         -o-transition: 0.5s ease-in-out;
+//         transition: 0.5s ease-in-out;
+//       }
+//     }
+
+//     .calloutBlock_image {
+//       transform: translateX(-110%);
+//       -webkit-transition: 0.5s ease-in-out;
+//       -moz-transition: 0.5s ease-in-out;
+//       -o-transition: 0.5s ease-in-out;
+//       transition: 0.5s ease-in-out;
+//     }
+
+//     .calloutBlock_content {
+//       opacity: 0;
+//       -webkit-transition: 0.5s 0.35s ease-in-out;
+//       -moz-transition: 0.5s 0.35s ease-in-out;
+//       -o-transition: 0.5s 0.35s ease-in-out;
+//       transition: 0.5s 0.35s ease-in-out;
+//     }
+
+//     &._scrolled_in {
+//       .calloutBlock {
+//         &:before,
+//         &:after {
+//           -webkit-transform: scaleX(1);
+//           -moz-transform: scaleX(1);
+//           -o-transform: scaleX(1);
+//           transform: scaleX(1);
+//         }
+//       }
+//       .calloutBlock_image {
+//         transform: translateX(0);
+//       }
+//       .calloutBlock_content {
+//         opacity: 1;
+//       }
+//     }
+//   }
+
+//   .scrollView--slideshow_statistics {
+//     opacity: 0;
+//     -webkit-transition: 0.5s ease-in-out;
+//     -moz-transition: 0.5s ease-in-out;
+//     -o-transition: 0.5s ease-in-out;
+//     transition: 0.5s ease-in-out;
+
+//     &._scrolled_in {
+//       opacity: 1;
+//     }
+//   }
+
+//   .scrollView--featured_fund_commentary {
+//     h2 {
+//       opacity: 0;
+//       -webkit-transition: 0.5s ease-in-out;
+//       -moz-transition: 0.5s ease-in-out;
+//       -o-transition: 0.5s ease-in-out;
+//       transition: 0.5s ease-in-out;
+//     }
+//     .commCard {
+//       overflow: hidden;
+//     }
+//     .commCard_link {
+//       -webkit-transform: translateX(-110%);
+//       -moz-transform: translateX(-110%);
+//       -o-transform: translateX(-110%);
+//       transform: translateX(-110%);
+//       -webkit-transition: 0.5s ease-in-out;
+//       -moz-transition: 0.5s ease-in-out;
+//       -o-transition: 0.5s ease-in-out;
+//       transition: 0.5s ease-in-out;
+//     }
+//     .commCard_type,
+//     .commCard_title,
+//     .commCard_date {
+//       opacity: 0;
+//       -webkit-transition: 0.25s 0.3s ease-in-out;
+//       -moz-transition: 0.25s 0.3s ease-in-out;
+//       -o-transition: 0.25s 0.3s ease-in-out;
+//       transition: 0.25s 0.3s ease-in-out;
+//     }
+
+//     &._scrolled_in {
+//       h2 {
+//         opacity: 1;
+//       }
+//       .commCard_link {
+//         -webkit-transform: translateX(0);
+//         -moz-transform: translateX(0);
+//         -o-transform: translateX(0);
+//         transform: translateX(0);
+//       }
+//       .commCard_type,
+//       .commCard_title,
+//       .commCard_date {
+//         opacity: 1;
+//       }
+//     }
+//   }
+
+//   .scrollView--featured_insights {
+//     h2 {
+//       opacity: 0;
+//       -webkit-transition: 0.5s ease-in-out;
+//       -moz-transition: 0.5s ease-in-out;
+//       -o-transition: 0.5s ease-in-out;
+//       transition: 0.5s ease-in-out;
+//     }
+//     .postCard_inner {
+//       &:before,
+//       &:after {
+//         -webkit-transform: scaleX(0);
+//         -moz-transform: scaleX(0);
+//         -o-transform: scaleX(0);
+//         transform: scaleX(0);
+//         -webkit-transform-origin: left center;
+//         -moz-transform-origin: left center;
+//         -o-transform-origin: left center;
+//         transform-origin: left center;
+//         -webkit-transition: 0.5s ease-in-out;
+//         -moz-transition: 0.5s ease-in-out;
+//         -o-transition: 0.5s ease-in-out;
+//         transition: 0.5s ease-in-out;
+//       }
+//     }
+//     .postCard_meta,
+//     .postCard_title,
+//     .postCard_description {
+//       opacity: 0;
+//       -webkit-transition: 0.25s 0.3s ease-in-out;
+//       -moz-transition: 0.25s 0.3s ease-in-out;
+//       -o-transition: 0.25s 0.3s ease-in-out;
+//       transition: 0.25s 0.3s ease-in-out;
+//     }
+
+//     &._scrolled_in {
+//       h2 {
+//         opacity: 1;
+//       }
+//       .postCard_inner {
+//         &:before,
+//         &:after {
+//           -webkit-transform: scaleX(1);
+//           -moz-transform: scaleX(1);
+//           -o-transform: scaleX(1);
+//           transform: scaleX(1);
+//         }
+//         .postCard_meta,
+//         .postCard_title,
+//         .postCard_description {
+//           opacity: 1;
+//         }
+//       }
+//     }
+//   }
+//   .globalFooter > .row {
+//     opacity: 0;
+//   }
+//   .globalFooter._scrolled_in > .row {
+//     animation: fadeIn 0.3s 0.5s ease-in-out forwards;
+//   }
+//   .globalFooter_brandInner {
+//     -webkit-transform-origin: left bottom;
+//     -moz-transform-origin: left bottom;
+//     -o-transform-origin: left bottom;
+//     transform-origin: left bottom;
+//     -webkit-transform: scale(0);
+//        -moz-transform: scale(0);
+//          -o-transform: scale(0);
+//             transform: scale(0);
+//   }
+//   ._scrolled_in .globalFooter_brandInner {
+//     animation: openLeft 0.2s 0.3s ease-in-out forwards;
+//   }
+//   .globalFooter_logo {
+//     opacity: 0;
+//   }
+//   ._scrolled_in .globalFooter_logo {
+//     animation: fadeIn 0.3s 0.5s ease-in-out forwards;
+//   }
+// }

@@ -1,0 +1,257 @@
+// Global navigation
+// ----------------------------------------------
+.globalNav_wrap {
+  @include breakpoint(large) {
+    overflow: visible !important;
+  }
+
+  .row {
+    position: relative;
+    @include breakpoint(medium down) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    @include breakpoint(large) {
+    }
+  }
+}
+
+.globalNav {
+  background-color: $color-navy;
+  @include breakpoint(medium down) {
+    padding-top: 3em;
+  }
+  @include breakpoint(large) {
+    background-color: transparent;
+  }
+}
+
+.globalMenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  a {
+    border-bottom: 1px solid $white;
+    color: $white;
+    display: block;
+    font-size: rem-calc(20);
+    font-weight: 700;
+    outline: none;
+    padding: rem-calc(15);
+
+    @include breakpoint(large) {
+      font-size: rem-calc(12);
+    }
+    @include breakpoint(xlarge) {
+      padding: rem-calc(15) rem-calc(25);
+    }
+  }
+
+  > li {
+
+    &._is_active > a,
+    &.current-menu-item > a,
+    &.current_page_parent > a, {
+      @include breakpoint(large) {
+        color: $color-navy;
+        ._solid &,
+        .single-person &,
+        .blog &,
+        .single-post &,
+        .error404 & {
+          color: $color-light-tan;
+        }
+      }
+    }
+
+    &.social {
+      float: left;
+
+      a {
+        border-style: none;
+      }
+    }
+
+    @include breakpoint(large) {
+      float: left;
+      margin-bottom: 0;
+    }
+
+    > ul {
+      display: none;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    > ul > li > a {
+      padding-left: rem-calc(30);
+    }
+  }
+
+  li {
+    position: relative;
+  }
+
+  @include breakpoint(large) {
+    float: left;
+    margin: rem-calc(-10) 0 0 rem-calc(-15);
+
+    > li {
+
+      &#menu-item-195 {
+        padding-left: rem-calc(40);
+        position: relative;
+
+        &:before {
+          background-color: $white;
+          content: "";
+          display: block;
+          height: 25px;
+          left: rem-calc(22);
+          position: absolute;
+          transform: rotate(30deg);
+          top: rem-calc(15);
+          width: 1px;
+
+          .home & {
+            background-color: $color-medium-gray;
+          }
+        }
+      }
+
+      a {
+        border-style: none;
+      }
+
+      li a:hover {
+        color: $color-light-tan;
+      }
+
+      > a {
+        .home & {
+          color: $color-medium-gray;
+        }
+      }
+
+      > ul {
+        background-color: $color-navy;
+        display: none !important;
+        left: 50%;
+        margin-left: rem-calc(-75);
+        position: absolute;
+        text-align: center;
+        top: 100%;
+        width: rem-calc(150);
+        z-index: 200;
+
+        > li {
+          > a {
+            padding: rem-calc(15);
+          }
+        }
+      }
+      &:hover {
+        > a {
+          color: $color-navy;
+          ._solid &,
+          .single-person &,
+          .blog &,
+          .single-post &,
+          .error404 &,
+          .page-template-page-privacy & {
+            color: $color-light-tan;
+          }
+          .home & {
+            color: $color-dark-tan;
+          }
+        }
+        > ul {
+          @include breakpoint(large) {
+            display: block !important;
+          }
+        }
+      }
+    }
+  }
+  @include breakpoint(xlarge) {
+    margin: rem-calc(-10) 0 0 rem-calc(-25);
+  }
+}
+
+a.globalNav_expander {
+  @include icon(arrow);
+  background-color: transparent !important;
+  border-style: none !important;
+  color: $white !important;
+  display: block;
+  height: 2em;
+  line-height: 2em !important;
+  padding: 0 !important;
+  position: absolute;
+  right: 0.5em;
+  text-align: center;
+  top: 0.75em;
+  width: 2em;
+
+  &:before {
+    transition: 0.25s ease-in-out;
+  }
+
+  @include breakpoint(large) {
+    display: none !important;
+  }
+
+  ._is_active & {
+    &:before {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.socialMenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  right: rem-calc(50);
+  top: 42vh;
+  transform: translateY(-50%);
+  z-index: 1;
+
+  .blog & {
+    z-index: 101;
+  }
+
+  li {
+    margin: 0 0 rem-calc(15) 0;
+  }
+
+  a {
+    color: $white;
+  }
+
+  .single-post &,
+  .single-person & {
+    top: rem-calc(300);
+  }
+}
+
+.social--twitter {
+  span {
+    display: none;
+  }
+  a {
+    @include icon(twitter);
+  }
+}
+
+.social--linkedin {
+  span {
+    display: none;
+  }
+  a {
+    @include icon(linkedin);
+  }
+}

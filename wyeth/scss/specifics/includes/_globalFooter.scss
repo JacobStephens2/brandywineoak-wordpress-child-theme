@@ -1,0 +1,64 @@
+// Footer
+// ----------------------------------------------
+.globalFooter {
+  background-color: $white;
+  font-size: rem-calc(11);
+  padding: rem-calc(60) 0 rem-calc(20);
+  position: relative;
+  z-index: 10;
+
+  @include breakpoint(medium) {
+    padding-top: rem-calc(125);
+  }
+  @include breakpoint(large) {
+    padding-top: rem-calc(190);
+  }
+
+  > .row {
+    max-width: 100%;
+  }
+
+  .blog &,
+  .home & {
+    padding-top: rem-calc(25);
+    @include breakpoint(medium) {
+      padding-top: rem-calc(30);
+    }
+    @include breakpoint(large) {
+      padding-top: rem-calc(35);
+    }
+  }
+}
+
+.legalMenu {
+  list-style: none;
+  margin: 0 0 1.5em 0;
+  padding: 0;
+
+  @include breakpoint(medium) {
+    float: right;
+    margin: 0;
+  }
+
+  li {
+    margin-bottom: 0.5em;
+    @include breakpoint(medium) {
+      display: inline-block;
+      margin: 0 0 0 2em;
+    }
+  }
+
+  a {
+    color: $color-dark-gray;
+    font-weight: 500;
+  }
+}
+
+.disclosure {
+  color: $black;
+
+  a {
+    color: $black;
+    text-decoration: underline;
+  }
+}

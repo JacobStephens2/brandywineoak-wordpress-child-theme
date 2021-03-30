@@ -1,0 +1,49 @@
+// Lighten Color
+// ----------------------------------------------
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+// Darken Color
+// ----------------------------------------------
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+
+// Icons
+// ----------------------------------------------
+%icon {
+  font-family: 'icon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  display: inline-block;
+}
+
+// Icon Placeholders
+@each $icon in $icons-default {
+  %icon_#{map-get($icon, name)}--before {
+    &:before {
+      @extend %icon;
+      content: map-get($icon, char_code);
+    }
+  }
+  %icon_#{map-get($icon, name)}--after {
+    &:after {
+      @extend %icon;
+      content: map-get($icon, char_code);
+    }
+  }
+}
+
+@mixin icon($name, $placement: 'before') {
+  @if $placement == 'after' {
+    @extend %icon_#{$name}--after;
+  } @else {
+    @extend %icon_#{$name}--before;
+  }
+}

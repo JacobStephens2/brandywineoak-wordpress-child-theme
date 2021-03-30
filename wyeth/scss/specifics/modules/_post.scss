@@ -1,0 +1,241 @@
+// Header
+// ----------------------------------------------
+.entry-header--news {
+  background-color: $color-navy;
+  padding: rem-calc(120) 0 rem-calc(20);
+
+  @include breakpoint(large) {
+    padding: rem-calc(185) 0 rem-calc(30);
+  }
+
+  h1 {
+    .blog & {
+      color: $white;
+    }
+    .single-post & {
+      @extend %baskerville;
+      color: $color-dark-tan;
+      font-size: rem-calc(29);
+      font-weight: 400;
+      margin-bottom: rem-calc(20);
+      text-transform: none;
+
+      @include breakpoint(medium) {
+        font-size: rem-calc(32);
+      }
+      @include breakpoint(large) {
+        font-size: rem-calc(35);
+      }
+    }
+  }
+}
+
+.entry-header--post {
+  padding-bottom: rem-calc(100);
+}
+
+.mockH1 {
+  color: $white;
+  font-weight: 700;
+  margin-bottom: rem-calc(25);
+
+  @include breakpoint(medium) {
+    margin-bottom: rem-calc(60);
+  }
+  @include breakpoint(large) {
+    margin-bottom: rem-calc(100);
+  }
+}
+
+.articleTitle_date {
+  color: $white;
+  font-size: rem-calc(16);
+}
+
+
+// Listings
+// ----------------------------------------------
+.postCard {
+}
+
+.postCard_inner {
+  border-top: 1px solid $color-dark-tan;
+  padding: rem-calc(35) rem-calc(20);
+
+  @include breakpoint(medium) {
+    padding: rem-calc(40) rem-calc(40) rem-calc(60) rem-calc(40);
+  }
+
+  @include breakpoint(large) {
+    padding: rem-calc(50) rem-calc(50) rem-calc(90) rem-calc(50);
+  }
+}
+
+.postCard_meta {
+  color: $white;
+  font-size: rem-calc(14);
+
+  @include breakpoint(medium) {
+    float: left;
+    font-size: rem-calc(15);
+    padding-right: rem-calc(30);
+    width: rem-calc(180);
+  }
+  @include breakpoint(large) {
+    font-size: rem-calc(16);
+    width: rem-calc(200);
+  }
+}
+
+.postCard_title {
+  @extend %baskerville;
+  color: $color-dark-tan;
+  font-size: rem-calc(22);
+  font-weight: 400;
+  margin: rem-calc(20) 0 0;
+  text-transform: none;
+
+  @include breakpoint(medium) {
+    font-size: rem-calc(28);
+    margin-top: 0;
+    overflow: hidden;
+  }
+
+  @include breakpoint(large) {
+    font-size: rem-calc(35);
+  }
+
+  a {
+    color: $color-dark-tan;
+
+    &:hover {
+      color: $color-light-tan;
+    }
+  }
+}
+
+
+// Post Styles
+// ----------------------------------------------
+.entry-content--post {
+  padding-top: rem-calc(75);
+
+  p, ol, ul {
+    line-height: 1.8;
+  }
+
+  ul, ol {
+    li {
+      margin-bottom: 0.5em;
+    }
+  }
+
+  h2 {
+    @extend %gotham;
+    color: $color-teal;
+    font-size: rem-calc(14);
+    line-height: 1.8;
+    margin: 2em 0;
+
+    @include breakpoint(medium) {
+      font-size: rem-calc(16);
+    }
+    @include breakpoint(large) {
+      font-size: rem-calc(16);
+    }
+  }
+  h3 {
+    @extend %baskerville;
+    color: $color-teal;
+    font-size: rem-calc(23);
+    font-weight: 400;
+    margin: 1em 0;
+
+    @include breakpoint(medium) {
+      font-size: rem-calc(26);
+    }
+    @include breakpoint(large) {
+      font-size: rem-calc(30);
+    }
+  }
+  h4 {
+    @extend %gotham;
+    color: $color-teal;
+    font-size: rem-calc(18);
+    font-weight: 400;
+    margin: 1em 0;
+    text-transform: uppercase;
+
+    @include breakpoint(medium) {
+      font-size: rem-calc(21);
+    }
+    @include breakpoint(large) {
+      font-size: rem-calc(24);
+    }
+  }
+
+  blockquote {
+    border-style: none;
+    font-size: rem-calc(16);
+    font-style: italic;
+    margin: 1.5em 0;
+    padding: 0;
+  }
+
+  .content_main {
+    a {
+      border-bottom: 1px solid;
+      color: $color-dark-gray;
+    }
+  }
+
+  figure {
+    margin: 2.5em 0;
+    img {
+      max-width: 100% !important;
+    }
+  }
+}
+
+.single-post .btn {
+  border: 1px solid $color-navy-alt;
+  color: $color-navy-alt;
+  display: inline-block;
+  font-size: rem-calc(12);
+  font-weight: 700;
+  height: rem-calc(40);
+  line-height: rem-calc(40);
+  padding: 0 rem-calc(25);
+  text-transform: uppercase;
+
+  &:hover {
+    border-color: $color-dark-tan;
+    color: $color-dark-tan;
+  }
+}
+
+a.download {
+  @include icon(download,before);
+  color: $color-navy-alt;
+  font-size: rem-calc(12);
+  font-weight: 700;
+  display: inline-block;
+  padding-left: rem-calc(30);
+  position: relative;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $color-dark-tan;
+  }
+
+  &:before {
+    font-size: rem-calc(24);
+    left: 0;
+    position: absolute;
+    top: -0.1em;
+  }
+}
+
+.mobileDownload {
+  padding-bottom: rem-calc(25);
+}

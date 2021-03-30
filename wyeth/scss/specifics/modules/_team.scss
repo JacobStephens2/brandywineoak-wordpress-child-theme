@@ -1,0 +1,163 @@
+// People Cards
+// ----------------------------------------------
+.teamGrid {
+  padding: rem-calc(20) 0;
+
+  @include breakpoint(medium) {
+    padding: rem-calc(90) 0 rem-calc(20);
+  }
+  @include breakpoint(large) {
+    padding: rem-calc(200) 0 rem-calc(20);
+  }
+}
+
+.teamCard {
+  margin-bottom: rem-calc(30);
+
+  @include breakpoint(medium) {
+    margin-bottom: rem-calc(70);
+  }
+  @include breakpoint(xlarge) {
+    margin-bottom: rem-calc(110);
+  }
+  @include breakpoint(xlarge) {
+    margin-bottom: rem-calc(150);
+  }
+}
+
+.teamCard_link {
+  display: block;
+}
+
+.teamCard_image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 0 !important;
+  padding-bottom: 100% !important;
+}
+
+.teamCard_content {
+  padding-top: 0.5em;
+  @include breakpoint(medium) {
+    padding-top: 1em;
+  }
+}
+
+.teamCard_name {
+  color: $color-navy;
+  font-size: rem-calc(12);
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @include breakpoint(medium) {
+    font-size: rem-calc(16);
+  }
+
+  @include breakpoint(xlarge) {
+    font-size: rem-calc(20);
+  }
+}
+
+.teamCard_title {
+  color: $color-dark-gray;
+  font-size: rem-calc(12);
+
+  @include breakpoint(medium) {
+    font-size: rem-calc(16);
+  }
+
+  @include breakpoint(xlarge) {
+    font-size: rem-calc(20);
+  }
+}
+
+// Bio
+// ----------------------------------------------
+.bioBanner {
+  background-color: $color-navy;
+  padding: rem-calc(120) 0 rem-calc(60);
+
+  @include breakpoint(large) {
+    padding: rem-calc(200) 0 rem-calc(55);
+  }
+}
+
+.bioBanner_name {
+  color: $color-dark-tan;
+  font-size: rem-calc(18);
+  font-weight: 700;
+  margin: rem-calc(20) 0 rem-calc(16);
+  text-transform: uppercase;
+
+  @include breakpoint(medium) {
+    font-size: rem-calc(20);
+  }
+}
+
+.bioBanner_title,
+.bioBanner_meta {
+  color: $white;
+  font-size: rem-calc(14);
+  margin-bottom: rem-calc(16);
+
+  @include breakpoint(medium) {
+    font-size: rem-calc(16);
+  }
+
+  a {
+    color: $white;
+  }
+}
+
+.bioContent {
+  font-size: rem-calc(14);
+  padding-top: rem-calc(60);
+
+  @include breakpoint(medium) {
+    font-size: rem-calc(16);
+  }
+
+  p, ol, ul {
+    line-height: 2;
+  }
+}
+
+.single-person .btn {
+  border: 1px solid $color-navy-alt;
+  color: $color-navy-alt;
+  display: inline-block;
+  font-size: rem-calc(12);
+  font-weight: 700;
+  height: rem-calc(40);
+  line-height: rem-calc(40);
+  padding: 0 rem-calc(25);
+  text-transform: uppercase;
+
+  &:hover {
+    border-color: $color-dark-tan;
+    color: $color-dark-tan;
+  }
+}
+
+.entry-content > div.bioContent > .row {
+  @include breakpoint(large) {
+    padding-left: rem-calc(50);
+    padding-right: rem-calc(50);
+  }
+}
+
+.bioContent_text {
+  @include breakpoint(xlarge) {
+    padding-right: rem-calc(40);
+  }
+
+  a {
+    border-bottom: 1px solid;
+    color: $color-dark-gray;
+  }
+}
+
+.bioContent_photo {
+  margin-bottom: rem-calc(25);
+}

@@ -1,0 +1,123 @@
+// Pagination
+// ----------------------------------------------
+#pagination {
+  border-top: 1px solid $color-dark-tan;
+  margin: 0;
+  padding: rem-calc(60) 0 rem-calc(100);
+  text-align: center;
+  vertical-align: top;
+
+  @include breakpoint(medium) {
+    padding: rem-calc(35) 0 rem-calc(165);
+    text-align: left;
+  }
+
+  a {
+    display: inline-block;
+  }
+}
+
+.pagination {
+  display: inline-block;
+  margin: 0;
+  vertical-align: top;
+
+  a.prev,
+  a.next {
+    display: none !important;
+  }
+}
+
+.pagination_previous,
+.pagination_next {
+  display: inline-block;
+  height: 35px;
+  padding-top: 3px;
+  vertical-align: top;
+  width: 35px;
+
+  .post-pagination & {
+    margin: 0 0 0 rem-calc(15);
+  }
+
+  a,
+  span {
+    @include icon(arrow,before);
+    border: 1px solid $color-light-tan;
+    border-radius: 35px;
+    color: $color-light-tan;
+    display: block;
+    height: 35px;
+    font-size: 0;
+    vertical-align: top;
+    width: 35px;
+
+    &:hover {
+      border-color: $color-dark-tan;
+      color: $color-dark-tan;
+      &:before {
+        border-color: $color-dark-tan;
+        color: $color-dark-tan;
+      }
+    }
+
+    &:before {
+      font-size: rem-calc(17);
+      height: 33px;
+      line-height: 36px;
+      text-align: center;
+      width: 33px;
+    }
+
+    .post-pagination & {
+      border-color: $color-navy-alt;
+      color: $color-navy-alt;
+
+      &:hover {
+        border-color: $color-dark-tan;
+        color: $color-dark-tan;
+      }
+    }
+  }
+  span {
+    opacity: 0.5;
+  }
+}
+
+.pagination_previous {
+  margin-right: 20px;
+  > *:before {
+    transform:rotate(90deg);
+  }
+}
+
+.pagination_next {
+  margin-left: 20px;
+  > *:before {
+    transform:rotate(-90deg);
+  }
+}
+
+.page-numbers {
+  color: $color-light-tan !important;
+  display: inline-block;
+  font-size: rem-calc(13);
+  font-weight: 700;
+  height: rem-calc(35);
+  line-height: rem-calc(35);
+  padding: 0 rem-calc(5) !important;
+}
+
+a.page-numbers {
+  &:hover {
+    color: $color-dark-tan !important;
+  }
+}
+
+.post-pagination {
+  padding: rem-calc(45) 0 0;
+
+  @include breakpoint(large) {
+    padding: 0 0 rem-calc(35);
+  }
+}

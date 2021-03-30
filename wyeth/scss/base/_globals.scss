@@ -1,0 +1,685 @@
+//  Globals
+//  -----------------------------
+.column.row {
+  @include breakpoint(small) {
+    padding-left: rem-calc(20);
+    padding-right: rem-calc(20);
+  }
+  @include breakpoint(medium) {
+    padding-left: rem-calc(30);
+    padding-right: rem-calc(30);
+  }
+  @include breakpoint(large) {
+    padding-left: rem-calc(50);
+    padding-right: rem-calc(50);
+  }
+}
+
+.entry-content {
+  background-color: $white;
+  position: relative;
+  z-index: 10;
+
+  .blog & {
+    background-color: $color-navy;
+
+    > .row {
+      @include breakpoint(large) {
+        padding-right: rem-calc(100);
+      }
+    }
+  }
+
+  > div {
+    > .row {
+      @include breakpoint(large) {
+        padding-left: rem-calc(100);
+        padding-right: rem-calc(100);
+      }
+    }
+  }
+}
+
+
+.content {
+}
+
+//  Headers
+//  -----------------------------
+h1,
+.mockH1 {
+  font-size: rem-calc(10);
+  margin-bottom: 3em;
+  text-transform: uppercase;
+
+  @include breakpoint(medium) {
+    font-size: rem-calc(13);
+  }
+
+  .page-template-page-privacy & {
+    color: $white;
+  }
+}
+
+h2 {
+  font-size: rem-calc(10);
+  margin-bottom: 3em;
+  text-transform: uppercase;
+
+  @include breakpoint(medium) {
+    font-size: rem-calc(13);
+  }
+}
+
+h3 {
+}
+
+
+//  Page Blocks
+//  -----------------------------
+.contentBlock {
+  padding: rem-calc(45) 0;
+
+  @include breakpoint(medium) {
+    padding: rem-calc(110) 0;
+  }
+  @include breakpoint(large) {
+    padding: rem-calc(190) 0;
+  }
+}
+
+.contentBlock_intro {
+  @extend %baskerville;
+  font-size: rem-calc(22);
+  margin-bottom: 1em;
+
+  @include breakpoint(medium) {
+    font-size: rem-calc(30);
+    margin-bottom: 1.5em;
+  }
+
+  @include breakpoint(large) {
+    font-size: rem-calc(35);
+    margin-bottom: 2em;
+  }
+}
+
+.contentBlock_content {
+  font-size: rem-calc(14);
+
+  @include breakpoint(medium) {
+    font-size: rem-calc(15);
+  }
+
+  @include breakpoint(large) {
+    font-size: rem-calc(16);
+  }
+
+  p,ol,ul {
+    line-height: 2;
+  }
+
+  a {
+    border-bottom: 1px solid;
+    color: inherit;
+  }
+
+  figure {
+    display: block;
+  }
+}
+
+.contentBlock_contentMain {
+  @include breakpoint(large) {
+    padding-right: rem-calc(25);
+  }
+  @include breakpoint(xlarge) {
+    padding-right: rem-calc(50);
+  }
+  figure {
+    margin: rem-calc(35) rem-calc(-20);
+    @include breakpoint(medium) {
+      display: none;
+    }
+
+    a {
+      border-style: none !important;
+    }
+  }
+}
+
+.contentBlock_contentSidebar {
+  figure {
+    margin: rem-calc(30) 0;
+    width: 60%;
+
+    a {
+      border-style: none !important;
+    }
+  }
+}
+
+.contentBlock_contentMain,
+.contentBlock_contentSidebar {
+  *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contentBlock_contentSidebar {
+  font-style: italic;
+  font-weight: 500;
+}
+
+.contentBlock--main {
+  background-color: $color-navy;
+
+  h2 {
+    color: $color-dark-tan;
+  }
+  .contentBlock_intro {
+    color: $color-dark-tan;
+  }
+  .contentBlock_contentMain {
+    color: $color-light-tan;
+  }
+  .contentBlock_contentSidebar {
+    color: $color-dark-tan;
+
+    a {
+      &:hover {
+        color: $color-light-tan;
+      }
+    }
+  }
+}
+
+.contentBlock--alt {
+  background-color: $white;
+
+  h2 {
+    color: $color-red;
+  }
+  .contentBlock_intro {
+    color: $color-red;
+  }
+  .contentBlock_contentMain {
+    color: $color-dark-gray;
+  }
+}
+
+//  Image Grid
+//  -----------------------------
+.imageGrid {
+  margin-top: rem-calc(30);
+  overflow: hidden;
+
+  .cell {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 0;
+    padding-bottom: 60%;
+
+    @include breakpoint(medium) {
+      padding-bottom: 40%;
+    }
+  }
+}
+
+//  Process
+//  -----------------------------
+.processBlock {
+  padding-top: rem-calc(55);
+
+  @include breakpoint(medium) {
+    padding-bottom: rem-calc(75);
+    padding-top: rem-calc(125);
+  }
+  @include breakpoint(large) {
+    padding-bottom: rem-calc(150);
+    padding-top: rem-calc(190);
+  }
+
+  h2 {
+    color: $color-lime;
+    @include breakpoint(medium) {
+      margin-bottom: rem-calc(60);
+    }
+    @include breakpoint(large) {
+      margin-bottom: rem-calc(100);
+    }
+  }
+}
+
+.processBlock_wrap {
+  text-align: center;
+}
+
+.processBlock_item {
+  margin-bottom: rem-calc(60);
+  position: relative;
+  text-align: center !important;
+
+  @include breakpoint(medium) {
+    display: inline-block;
+    font-size: 80%;
+    vertical-align: top;
+    width: 33%;
+
+    &:nth-child(3n + 1) {
+      &:before {
+        display: none;
+      }
+    }
+
+    &:before {
+      background-color: $color-dark-gray;
+      content: "";
+      display: block;
+      height: 6.25em;
+      left: 0;
+      position: absolute;
+      transform: rotate(20deg);
+      top: 2em;
+      width: 1px;
+    }
+  }
+  @include breakpoint(large) {
+    width: 20%;
+
+    &:nth-child(3n + 1) {
+      &:before {
+        display: block;
+      }
+    }
+    &:first-child {
+      &:before {
+        display: none !important;
+      }
+    }
+  }
+  @include breakpoint(xlarge) {
+    font-size: 100%;
+  }
+}
+
+.processBlock_inner {
+  margin: 0 auto;
+  max-width: rem-calc(200);
+  padding: 0 2em;
+}
+
+.processBlock_number {
+  @extend %baskerville;
+  color: $color-lime;
+  display: block;
+  font-size: 12.5em;
+  line-height: 1.1;
+  margin-bottom: 0;
+}
+
+.processBlock_title {
+  color: $color-dark-gray;
+  font-size: 1em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+//  Text Blocks
+//  -----------------------------
+.textBlocks {
+  padding: rem-calc(20) 0 0;
+
+  @include breakpoint(medium) {
+    padding: rem-calc(45) 0 rem-calc(18);
+  }
+
+  @include breakpoint(large) {
+    padding: rem-calc(75) 0 rem-calc(48);
+  }
+}
+
+.textBlock_item {
+  background-color: $color-light-gray;
+  margin-bottom: rem-calc(30);
+  position: relative;
+}
+
+.textBlock_title {
+  @extend %baskerville;
+  @include icon(arrow, after);
+  cursor: pointer;
+  font-size: rem-calc(19);
+  font-weight: 400;
+  margin: 0;
+  padding: rem-calc(25) rem-calc(65) rem-calc(20) rem-calc(25);
+  position: relative;
+
+  @include breakpoint(medium) {
+    cursor: auto;
+    font-size: rem-calc(33);
+    margin-bottom: rem-calc(20);
+    padding-bottom: 0;
+  }
+  @include breakpoint(large) {
+    font-size: rem-calc(46);
+    padding: rem-calc(60) rem-calc(60) 0 rem-calc(60);
+  }
+
+  &:after {
+    display: block;
+    height: rem-calc(40);
+    line-height: rem-calc(40);
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: rem-calc(20);
+    transition: 0.25s ease-in-out;
+    width: rem-calc(60);
+
+    ._is_open & {
+      transform: rotate(180deg);
+    }
+
+    @include breakpoint(medium) {
+      display: none !important;
+    }
+  }
+}
+
+.textBlock_content {
+  display: none;
+  font-size: rem-calc(12);
+  padding: 0 rem-calc(25) rem-calc(25) rem-calc(25);
+
+  @include breakpoint(medium) {
+    display: block !important;
+    font-size: rem-calc(14);
+  }
+
+  @include breakpoint(large) {
+    font-size: rem-calc(16);
+    padding: 0 rem-calc(60) rem-calc(60) rem-calc(60);
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-bottom: rem-calc(10);
+    }
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.textBlock_image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 0;
+  margin: 0 rem-calc(-20);
+  padding-bottom: 60%;
+
+  @include breakpoint(medium) {
+    bottom: 0;
+    height: auto;
+    left: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    .textBlock_item:nth-child(odd) & {
+      margin: 0 0 0 rem-calc(-30);
+    }
+
+    .textBlock_item:nth-child(even) & {
+      margin: 0 rem-calc(-30) 0 0;
+    }
+  }
+
+  @include breakpoint(large) {
+    .textBlock_item:nth-child(odd) & {
+      margin: 0 0 0 rem-calc(-100);
+    }
+
+    .textBlock_item:nth-child(even) & {
+      margin: 0 rem-calc(-100) 0 0;
+    }
+  }
+
+  @include breakpoint(xxlarge) {
+    .textBlock_item & {
+      margin: 0 !important;
+    }
+  }
+}
+
+
+//  Logo Blocks
+//  -----------------------------
+.logoBlocks {
+  padding: rem-calc(55) 0 rem-calc(20);
+
+  @include breakpoint(medium) {
+    padding: rem-calc(105) 0 rem-calc(20);
+  }
+
+  @include breakpoint(large) {
+    padding: rem-calc(165) 0 rem-calc(50);
+  }
+
+  h2 {
+    color: $color-red;
+    margin-bottom: rem-calc(30);
+
+    @include breakpoint(medium) {
+      margin-bottom: rem-calc(45);
+    }
+    @include breakpoint(large) {
+      margin-bottom: rem-calc(65);
+    }
+  }
+}
+
+.logoBlock_item {
+  background-color: $color-light-gray;
+  margin-bottom: rem-calc(30);
+}
+
+.logoBlock_title {
+  cursor: pointer;
+  padding: rem-calc(20);
+
+  @include breakpoint(medium) {
+    cursor: auto;
+    padding: rem-calc(25) rem-calc(25) rem-calc(28) rem-calc(25);
+  }
+  @include breakpoint(large) {
+    padding: rem-calc(60) rem-calc(60) rem-calc(45) rem-calc(60);
+  }
+
+  a {
+    display: block;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+
+    @include breakpoint(medium) {
+      margin: 0;
+    }
+  }
+}
+
+.logoBlock_content {
+  display: none;
+  font-size: rem-calc(12);
+  padding: 0 rem-calc(20) rem-calc(20);
+
+  @include breakpoint(medium) {
+    display: block !important;
+    font-size: rem-calc(14);
+    padding: 0 rem-calc(25) rem-calc(25);
+  }
+
+  @include breakpoint(large) {
+    font-size: rem-calc(16);
+    padding: 0 rem-calc(60) rem-calc(60);
+  }
+
+  p {
+    line-height: 1.8;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-bottom: rem-calc(10);
+    }
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.logoBlock_link {
+  color: $color-red;
+  font-size: rem-calc(12);
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &:visited {
+    color: $color-red;
+  }
+
+  &:hover,
+  &:active {
+    color: $color-dark-tan;
+  }
+
+  @include breakpoint(medium) {
+    display: none;
+  }
+}
+
+.map_block {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+
+  iframe {
+    border: 0;
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 0;
+    width: 100%;
+  }
+}
+
+.contact {
+  padding: rem-calc(15) 0 rem-calc(60);
+
+  @include breakpoint(medium) {
+    padding: rem-calc(30) 0 rem-calc(90);
+  }
+  @include breakpoint(large) {
+    padding: rem-calc(30) 0 rem-calc(125);
+  }
+}
+
+.contact_block {
+  font-size: rem-calc(12);
+  font-weight: 500;
+  padding-bottom: rem-calc(20);
+
+  @include breakpoint(medium) {
+    display: inline-block;
+    font-size: rem-calc(14);
+    padding-bottom: 0;
+    padding-right: rem-calc(50);
+  }
+  @include breakpoint(large) {
+    font-size: rem-calc(16);
+    padding-right: rem-calc(100);
+  }
+
+  a {
+    color: $white;
+  }
+}
+
+//  Watermarks
+//  -----------------------------
+.watermark {
+  background-repeat: no-repeat;
+}
+.watermark--main {
+  &.watermark--y {
+    background-image: url(img/watermarks/y-white.png);
+  }
+  &.watermark--th {
+    background-image: url(img/watermarks/th-white.png);
+  }
+  &.watermark--w {
+    background-image: url(img/watermarks/w-white.png);
+  }
+  &.watermark--wyeth {
+    background-image: url(img/watermarks/wyeth-white.png);
+  }
+}
+.watermark--alt {
+  &.watermark--y {
+    background-image: url(img/watermarks/y-gray.png);
+  }
+  &.watermark--th {
+    background-image: url(img/watermarks/th-gray.png);
+  }
+  &.watermark--w {
+    background-image: url(img/watermarks/w-gray.png);
+  }
+  &.watermark--wyeth {
+    background-image: url(img/watermarks/wyeth-gray.png);
+  }
+}
+.watermark--full {
+  &.watermark--y {
+    background-size: 734px 1008px;
+  }
+  &.watermark--th {
+    background-size: 1046px 860px;
+  }
+  &.watermark--w {
+    background-size: 1330px 896px;
+  }
+  &.watermark--wyeth {
+    background-size: 1890px 720px;
+  }
+}
+.watermark--half {
+  &.watermark--y {
+    background-size: 367px 504px;
+  }
+  &.watermark--th {
+    background-size: 523px 430px;
+  }
+  &.watermark--w {
+    background-size: 665px 448px;
+  }
+  &.watermark--wyeth {
+    background-size: 945px 360px;
+  }
+}
