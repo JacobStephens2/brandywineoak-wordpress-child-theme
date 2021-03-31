@@ -1,6 +1,7 @@
 <?php
   // Field Definitions
   $address = get_field('address','options');
+  $extra = get_field('extra','options');
   $email   = get_field('email','options');
   $phone   = get_field('phone','options');
   $team_list   = get_field('team_list','options');
@@ -16,6 +17,11 @@
         <?php if($address): ?>
           <div class="contact_block">
             <?= $address; ?>
+            <?php if($extra): ?>
+              <div class="sub_contact_block">
+                <?= $extra; ?>
+              </div>
+            <?php endif; ?>
           </div>
         <?php endif; ?>
         <div class="contact_block">

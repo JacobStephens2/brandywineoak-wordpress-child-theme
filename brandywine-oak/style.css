@@ -203,7 +203,7 @@
 
 /* Small View */
 
-@media (max-width: 723px) {
+@media (max-width: 773px) {
   .bo-header-font {
     font-size: 2rem !important;
   }
@@ -277,4 +277,58 @@
   .entry-header.entryBanner._step_1 {
     height: 89vh;
   }
+}
+
+.sub_contact_block {
+  margin-top: 0.8em;
+}
+
+.tagline {
+  display: block;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  font-style: italic;
+  /* font-family: 'Baskerville'; */
+  color: white;
+  text-transform: none;
+  font-size: 2em;
+  margin-bottom: 0.6em;
+}
+
+body {
+  font-size: 100%;
+}
+
+@media (max-width: 996px) {
+  .tagline {
+    display: block;
+    margin-top: 3px;
+  }
+}
+
+@media (max-width: 424px) {
+  .tagline {
+    margin-top: 4px;
+  }
+}
+
+@media (max-width: 417px) {
+  .entryIntro.bo-header-font {
+    position: relative;
+    top: -30px;
+  }
+  .banner_link {
+    position: relative;
+    top: -43px;
+  }
+  .tagline {
+    position: relative;
+    top: -40px;
+    margin-left: 0;
+    font-size: 1.3em;
+  }
+}
+
+.entryIntro {
+  line-height: 1.1;
 }

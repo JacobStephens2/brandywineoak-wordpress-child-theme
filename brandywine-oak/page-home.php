@@ -20,6 +20,9 @@
       <div class="entryBanner_contentInner">
         <div class="row column">
           <div class="entryIntro bo-header-font"><?= $introduction ?></div>
+          <h2 class="tagline">
+          A focus on the intersection between what matters and what we can control
+          </h2>
           <?php if($learn_more_link): ?>
             <a href="<?= $learn_more_link ?>" class="banner_link">Learn More</a>
           <?php endif; ?>
@@ -426,7 +429,7 @@
   <div class="bo-display-desktop">
     <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
-        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2021/03/Accolades-OneRow.jpg" alt="Row of Brandywine Oak Accolades" class="bo-horizontal-center">
+        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2021/03/Accolades-Desktop-Mar21-scaled.jpg" alt="Row of Brandywine Oak Accolades" class="bo-horizontal-center">
       </div>
     </div>
   </div>
@@ -435,7 +438,7 @@
   <div class="bo-display-tablet">
     <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
-        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2021/03/Accolades-TwoRows.jpg" alt="Two Rows of Brandywine Oak Accolades" class="bo-horizontal-center">
+        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2021/03/Accolades-Tablet_Mar21-scaled.jpg" alt="Two Rows of Brandywine Oak Accolades" class="bo-horizontal-center">
       </div>
     </div>
   </div>
@@ -445,7 +448,19 @@
 
     <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
+        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2021/03/2021-Barrons-top1200.png" alt="Forbes 2021" id="bo-horizontal-center">
+      </div>
+    </div>
+
+    <div class="card bg-primary" style="margin-bottom: 0px;">
+      <div class="card-body text-center bo-vertical-center">
         <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2021/03/Forbes-2021-SHOOK-BestInState.jpg" alt="Forbes 2021" id="bo-horizontal-center">
+      </div>
+    </div>
+
+    <div class="card bg-primary" style="margin-bottom: 0px;">
+      <div class="card-body text-center bo-vertical-center">
+        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2021/03/2021-SHOOK-Badge-TopWomen-Color.png" alt="Forbes 2021" id="bo-horizontal-center">
       </div>
     </div>
 
@@ -470,7 +485,7 @@
 
     <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
-        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2020/08/Forbes-SR-2020-Top-Next-Gen-Wealth-Advisors.jpeg" alt="Forbes Top Next Gen Wealth Advisors 2020" id="bo-horizontal-center">
+        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2021/03/2020-Forbes-SR-2020-Top-Next-Gen-Wealth-Advisors.png" alt="Forbes Top Next Gen Wealth Advisors 2020" id="bo-horizontal-center">
       </div>
     </div>
 
@@ -484,6 +499,12 @@
     <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
         <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2020/08/Forbes2018.png" alt="Forbes 2018" class="bo-logo" id="bo-horizontal-center">
+      </div>
+    </div>
+
+    <div class="card bg-primary" style="margin-bottom: 0px;">
+      <div class="card-body text-center bo-vertical-center">
+        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2020/06/Forbes2017.png" alt="Forbes 2018" class="bo-logo" id="bo-horizontal-center">
       </div>
     </div>
     
