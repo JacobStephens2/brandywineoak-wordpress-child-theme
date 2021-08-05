@@ -1,257 +1,255 @@
 // Global navigation
 // ----------------------------------------------
 .globalNav_wrap {
-  @include breakpoint(large) {
-    overflow: visible !important;
-  }
+	@include breakpoint(large) {
+		overflow: visible !important;
+	}
 
-  .row {
-    position: relative;
-    @include breakpoint(medium down) {
-      padding-left: 0;
-      padding-right: 0;
-    }
-    @include breakpoint(large) {
-    }
-  }
+	.row {
+		position: relative;
+		@include breakpoint(medium down) {
+			padding-left: 0;
+			padding-right: 0;
+		}
+		@include breakpoint(large) {
+		}
+	}
 }
 
 .globalNav {
-  background-color: $color-navy;
-  @include breakpoint(medium down) {
-    padding-top: 3em;
-  }
-  @include breakpoint(large) {
-    background-color: transparent;
-  }
+	background-color: $color-navy;
+	@include breakpoint(medium down) {
+		padding-top: 3em;
+	}
+	@include breakpoint(large) {
+		background-color: transparent;
+	}
 }
 
 .globalMenu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 
-  a {
-    border-bottom: 1px solid $white;
-    color: $white;
-    display: block;
-    font-size: rem-calc(20);
-    font-weight: 700;
-    outline: none;
-    padding: rem-calc(15);
+	a {
+		border-bottom: 1px solid $white;
+		color: $white;
+		display: block;
+		font-size: rem-calc(20);
+		font-weight: 700;
+		outline: none;
+		padding: rem-calc(15);
 
-    @include breakpoint(large) {
-      font-size: rem-calc(12);
-    }
-    @include breakpoint(xlarge) {
-      padding: rem-calc(15) rem-calc(25);
-    }
-  }
+		@include breakpoint(large) {
+			font-size: rem-calc(10);
+		}
+		@include breakpoint(xlarge) {
+			padding: rem-calc(15) rem-calc(25);
+		}
+	}
 
-  > li {
+	> li {
+		&._is_active > a,
+		&.current-menu-item > a,
+		&.current_page_parent > a {
+			@include breakpoint(large) {
+				color: $color-navy;
+				._solid &,
+				.single-person &,
+				.blog &,
+				.single-post &,
+				.error404 & {
+					color: $color-light-tan;
+				}
+			}
+		}
 
-    &._is_active > a,
-    &.current-menu-item > a,
-    &.current_page_parent > a, {
-      @include breakpoint(large) {
-        color: $color-navy;
-        ._solid &,
-        .single-person &,
-        .blog &,
-        .single-post &,
-        .error404 & {
-          color: $color-light-tan;
-        }
-      }
-    }
+		&.social {
+			float: left;
 
-    &.social {
-      float: left;
+			a {
+				border-style: none;
+			}
+		}
 
-      a {
-        border-style: none;
-      }
-    }
+		@include breakpoint(large) {
+			float: left;
+			margin-bottom: 0;
+		}
 
-    @include breakpoint(large) {
-      float: left;
-      margin-bottom: 0;
-    }
+		> ul {
+			display: none;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
 
-    > ul {
-      display: none;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
+		> ul > li > a {
+			padding-left: rem-calc(30);
+		}
+	}
 
-    > ul > li > a {
-      padding-left: rem-calc(30);
-    }
-  }
+	li {
+		position: relative;
+	}
 
-  li {
-    position: relative;
-  }
+	@include breakpoint(large) {
+		float: left;
+		margin: rem-calc(-10) 0 0 rem-calc(-15);
 
-  @include breakpoint(large) {
-    float: left;
-    margin: rem-calc(-10) 0 0 rem-calc(-15);
+		> li {
+			&#menu-item-195 {
+				padding-left: rem-calc(40);
+				position: relative;
 
-    > li {
+				&:before {
+					background-color: $white;
+					content: "";
+					display: block;
+					height: 25px;
+					left: rem-calc(22);
+					position: absolute;
+					transform: rotate(30deg);
+					top: rem-calc(15);
+					width: 1px;
 
-      &#menu-item-195 {
-        padding-left: rem-calc(40);
-        position: relative;
+					.home & {
+						background-color: $color-medium-gray;
+					}
+				}
+			}
 
-        &:before {
-          background-color: $white;
-          content: "";
-          display: block;
-          height: 25px;
-          left: rem-calc(22);
-          position: absolute;
-          transform: rotate(30deg);
-          top: rem-calc(15);
-          width: 1px;
+			a {
+				border-style: none;
+			}
 
-          .home & {
-            background-color: $color-medium-gray;
-          }
-        }
-      }
+			li a:hover {
+				color: $color-light-tan;
+			}
 
-      a {
-        border-style: none;
-      }
+			> a {
+				.home & {
+					color: $color-medium-gray;
+				}
+			}
 
-      li a:hover {
-        color: $color-light-tan;
-      }
+			> ul {
+				background-color: $color-navy;
+				display: none !important;
+				left: 50%;
+				margin-left: rem-calc(-75);
+				position: absolute;
+				text-align: center;
+				top: 100%;
+				width: rem-calc(150);
+				z-index: 200;
 
-      > a {
-        .home & {
-          color: $color-medium-gray;
-        }
-      }
-
-      > ul {
-        background-color: $color-navy;
-        display: none !important;
-        left: 50%;
-        margin-left: rem-calc(-75);
-        position: absolute;
-        text-align: center;
-        top: 100%;
-        width: rem-calc(150);
-        z-index: 200;
-
-        > li {
-          > a {
-            padding: rem-calc(15);
-          }
-        }
-      }
-      &:hover {
-        > a {
-          color: $color-navy;
-          ._solid &,
-          .single-person &,
-          .blog &,
-          .single-post &,
-          .error404 &,
-          .page-template-page-privacy & {
-            color: $color-light-tan;
-          }
-          .home & {
-            color: $color-dark-tan;
-          }
-        }
-        > ul {
-          @include breakpoint(large) {
-            display: block !important;
-          }
-        }
-      }
-    }
-  }
-  @include breakpoint(xlarge) {
-    margin: rem-calc(-10) 0 0 rem-calc(-25);
-  }
+				> li {
+					> a {
+						padding: rem-calc(15);
+					}
+				}
+			}
+			&:hover {
+				> a {
+					color: $color-navy;
+					._solid &,
+					.single-person &,
+					.blog &,
+					.single-post &,
+					.error404 &,
+					.page-template-page-privacy & {
+						color: $color-light-tan;
+					}
+					.home & {
+						color: $color-dark-tan;
+					}
+				}
+				> ul {
+					@include breakpoint(large) {
+						display: block !important;
+					}
+				}
+			}
+		}
+	}
+	@include breakpoint(xlarge) {
+		margin: rem-calc(-10) 0 0 rem-calc(-25);
+	}
 }
 
 a.globalNav_expander {
-  @include icon(arrow);
-  background-color: transparent !important;
-  border-style: none !important;
-  color: $white !important;
-  display: block;
-  height: 2em;
-  line-height: 2em !important;
-  padding: 0 !important;
-  position: absolute;
-  right: 0.5em;
-  text-align: center;
-  top: 0.75em;
-  width: 2em;
+	@include icon(arrow);
+	background-color: transparent !important;
+	border-style: none !important;
+	color: $white !important;
+	display: block;
+	height: 2em;
+	line-height: 2em !important;
+	padding: 0 !important;
+	position: absolute;
+	right: 0.5em;
+	text-align: center;
+	top: 0.75em;
+	width: 2em;
 
-  &:before {
-    transition: 0.25s ease-in-out;
-  }
+	&:before {
+		transition: 0.25s ease-in-out;
+	}
 
-  @include breakpoint(large) {
-    display: none !important;
-  }
+	@include breakpoint(large) {
+		display: none !important;
+	}
 
-  ._is_active & {
-    &:before {
-      transform: rotate(180deg);
-    }
-  }
+	._is_active & {
+		&:before {
+			transform: rotate(180deg);
+		}
+	}
 }
 
 .socialMenu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: fixed;
-  right: rem-calc(50);
-  top: 42vh;
-  transform: translateY(-50%);
-  z-index: 1;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	right: rem-calc(50);
+	top: 42vh;
+	transform: translateY(-50%);
+	z-index: 1;
 
-  .blog & {
-    z-index: 101;
-  }
+	.blog & {
+		z-index: 101;
+	}
 
-  li {
-    margin: 0 0 rem-calc(15) 0;
-  }
+	li {
+		margin: 0 0 rem-calc(15) 0;
+	}
 
-  a {
-    color: $white;
-  }
+	a {
+		color: $white;
+	}
 
-  .single-post &,
-  .single-person & {
-    top: rem-calc(300);
-  }
+	.single-post &,
+	.single-person & {
+		top: rem-calc(300);
+	}
 }
 
 .social--twitter {
-  span {
-    display: none;
-  }
-  a {
-    @include icon(twitter);
-  }
+	span {
+		display: none;
+	}
+	a {
+		@include icon(twitter);
+	}
 }
 
 .social--linkedin {
-  span {
-    display: none;
-  }
-  a {
-    @include icon(linkedin);
-  }
+	span {
+		display: none;
+	}
+	a {
+		@include icon(linkedin);
+	}
 }

@@ -1,11 +1,11 @@
 /*
- Theme Name:   Brandywine Oak
+ Theme Name:   Brandywine Oak 1.2
  Theme URI:    https://goodness-creative.com
  Description:  Wyeth Child Theme for Brandywine Oak
  Author:       Goodness Creative
  Author URI:   https://goodness-creative.com
  Template:     wyeth
- Version:      1.0.0
+ Version:      1.2.0
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         responsive-layout
@@ -34,8 +34,14 @@
   top: 42vh;
 }
 
+@media (max-width: 414px) {
+  .home .entryBanner_content .row {
+    top: 42vh;
+  }
+}
+
 .banner_link {
-  margin-top: 5px;
+  margin-top: 1.1em;
 }
 
 /* Cards */
@@ -201,13 +207,22 @@
   }
 }
 
-/* Small View */
+/* Tablet view */
 
-@media (max-width: 773px) {
+@media (max-width: 768px) {
+  .bo-header-font {
+    font-size: 3rem !important;
+  }
+}
+
+/* Mobile View */
+
+@media (max-width: 433px) {
   .bo-header-font {
     font-size: 2rem !important;
   }
 }
+
 
 @media (max-width: 575px) {
   .bo-display-tablet {
@@ -284,7 +299,7 @@
 }
 
 .tagline {
-  display: block;
+  display: table-cell;
   font-family: 'Libre Baskerville', serif;
   font-weight: 400;
   font-style: italic;
@@ -292,7 +307,9 @@
   color: white;
   text-transform: none;
   font-size: 2em;
-  margin-bottom: 0.6em;
+  border-top: 1px solid white;
+  padding-top: 7px;
+  line-height: 1.1;
 }
 
 body {
@@ -303,6 +320,7 @@ body {
   .tagline {
     display: block;
     margin-top: 3px;
+    margin-bottom: 1em;
   }
 }
 
@@ -312,23 +330,73 @@ body {
   }
 }
 
-@media (max-width: 417px) {
+@media (max-width: 612px) {
   .entryIntro.bo-header-font {
-    position: relative;
+    /* position: relative; */
     top: -30px;
   }
   .banner_link {
-    position: relative;
+    /* position: relative; */
     top: -43px;
   }
   .tagline {
-    position: relative;
+    /* position: relative; */
     top: -40px;
     margin-left: 0;
     font-size: 1.3em;
+    margin-bottom: 3em;
   }
 }
 
 .entryIntro {
   line-height: 1.1;
+  margin-bottom: 10px;
+}
+
+.sub_contact_block_line2 {
+  font-style: italic;
+}
+
+@media (max-width: 320px) {
+  .entryIntro {
+    font-size: 1.5rem !important;
+  }
+}
+
+body {
+	background: #283854;
+}
+
+@media screen and (min-width: 40em) {
+  .home .entryIntro {
+    font-size: 3.1rem;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .home .entryIntro {
+    font-size: 3.1rem;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  .home .entryIntro {
+    font-size: 3.7rem;
+  }
+}
+
+@media screen and (min-width: 87.5em) {
+  .home .entryIntro {
+    font-size: 4.5rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .entryIntro {
+    padding-right: 4rem;
+}
+}
+
+.nbsp {
+  display: inline;
 }

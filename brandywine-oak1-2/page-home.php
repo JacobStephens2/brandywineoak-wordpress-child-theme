@@ -8,6 +8,7 @@
   while ( have_posts() ) : the_post();
     $banner       = get_the_post_thumbnail_url();
     $introduction = get_field('page_introduction');
+    $subhead = get_field('page_subhead');
     $learn_more_link = get_field('learn_more_link');
 ?>
 
@@ -19,9 +20,11 @@
         <div class="entryBanner_content">
       <div class="entryBanner_contentInner">
         <div class="row column">
+          <!-- <div class="entryIntro bo-header-font">Helping Families Navigate Significant&#8239;Wealth</div> -->
           <div class="entryIntro bo-header-font"><?= $introduction ?></div>
+          <!-- <div class="entryIntro bo-header-font">Helping Families Navigate Significant<div class="nbsp">&nbsp;</div>Wealth</div> -->
           <h2 class="tagline">
-          A focus on the intersection between what matters and what we can control
+          <?= $subhead ?>
           </h2>
           <?php if($learn_more_link): ?>
             <a href="<?= $learn_more_link ?>" class="banner_link">Learn More</a>
@@ -429,7 +432,7 @@
   <div class="bo-display-desktop">
     <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
-        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2021/03/Accolades-Desktop-Mar21-scaled.jpg" alt="Row of Brandywine Oak Accolades" class="bo-horizontal-center">
+        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2021/04/Accolades-Desktop-Mar21_smaller-v3.jpg" alt="Row of Brandywine Oak Accolades" class="bo-horizontal-center">
       </div>
     </div>
   </div>
@@ -438,7 +441,7 @@
   <div class="bo-display-tablet">
     <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
-        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2021/03/Accolades-Tablet_Mar21-scaled.jpg" alt="Two Rows of Brandywine Oak Accolades" class="bo-horizontal-center">
+        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2021/04/AccoladesTabletv4.jpg" alt="Two Rows of Brandywine Oak Accolades" class="bo-horizontal-center">
       </div>
     </div>
   </div>
@@ -448,19 +451,19 @@
 
     <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
-        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2021/03/2021-Barrons-top1200.png" alt="Forbes 2021" id="bo-horizontal-center">
+        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2021/04/2021-Barrons-top1200.png" alt="2021 Barrons Top 1200" id="bo-horizontal-center">
       </div>
     </div>
 
     <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
-        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2021/03/Forbes-2021-SHOOK-BestInState.jpg" alt="Forbes 2021" id="bo-horizontal-center">
+        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2021/03/Forbes-2021-SHOOK-BestInState.jpg" alt="Forbes 2021 Best in State" id="bo-horizontal-center">
       </div>
     </div>
 
     <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
-        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2021/03/2021-SHOOK-Badge-TopWomen-Color.png" alt="Forbes 2021" id="bo-horizontal-center">
+        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2021/04/2021-SHOOK-Badge-TopWomen-Color.png" alt="Forbes 2021 Top Women" id="bo-horizontal-center">
       </div>
     </div>
 

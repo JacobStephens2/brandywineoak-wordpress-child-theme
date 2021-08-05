@@ -2,6 +2,7 @@
   // Field Definitions
   $address = get_field('address','options');
   $extra = get_field('extra','options');
+  $extraline2 = get_field('extraline2','options');
   $email   = get_field('email','options');
   $phone   = get_field('phone','options');
   $team_list   = get_field('team_list','options');
@@ -21,12 +22,15 @@
               <div class="sub_contact_block">
                 <?= $extra; ?>
               </div>
+              <div class="sub_contact_block_line2">
+                <?= $extraline2; ?>
+              </div>
             <?php endif; ?>
           </div>
         <?php endif; ?>
         <div class="contact_block">
           <?php if($phone): ?>
-            P: <?= $phone ?><br>
+            P: <a href="tel:<?php echo $phone; ?>"><?= $phone ?></a><br>
           <?php endif; ?>
           <?php if($email): ?>
             E: <a href="mailto:<?php echo antispambot( $email ); ?>"><?php echo antispambot( $email ); ?></a> <br>
