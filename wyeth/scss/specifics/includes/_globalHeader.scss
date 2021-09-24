@@ -1,375 +1,373 @@
 // Header
 // ----------------------------------------------
 .globalHeader {
-  padding: rem-calc(15) 0 rem-calc(10);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 500;
+	padding: rem-calc(15) 0 rem-calc(10);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 500;
 
-  &._solid {
-    background-color: $color-navy;
-  }
-  .single-person &,
-  .blog &,
-  .single-post &,
-  .error404 &,
-  .page-template-page-privacy & {
-    background-color: $color-navy;
-  }
+	&._solid {
+		background-color: $color-navy;
+	}
+	.single-person &,
+	.blog &,
+	.single-post &,
+	.error404 &,
+	.page-template-page-privacy & {
+		background-color: $color-navy;
+	}
 
-  @include breakpoint(medium) {
-    padding: rem-calc(30) 0 rem-calc(25);
-  }
+	@include breakpoint(medium) {
+		padding: rem-calc(30) 0 rem-calc(25);
+	}
 
-  @include breakpoint(large) {
-    padding: rem-calc(40) 0 rem-calc(25);
-  }
+	@include breakpoint(large) {
+		padding: rem-calc(40) 0 rem-calc(25);
+	}
 
-  > .row {
-    max-width: 100%;
-    position: relative;
-  }
+	> .row {
+		max-width: 100%;
+		position: relative;
+	}
 }
 
 .logo {
-  color: $white;
-  display: block;
-  fill: currentColor;
-  float: right;
-  margin: 0;
-  padding: 0;
+	color: $white;
+	display: block;
+	fill: currentColor;
+	float: right;
+	margin: 0;
+	padding: 0;
 
-  @include breakpoint(large) {
-    position: relative;
-    z-index: 50;
-  }
+	@include breakpoint(large) {
+		position: relative;
+		z-index: 50;
+	}
 
-  .home & {
-    color: $color-dark-gray;
-  }
+	.home & {
+		color: $color-dark-gray;
+	}
 
-  a {
-    display: block;
-  }
+	a {
+		display: block;
+	}
 
-  svg {
-    fill: $white;
+	svg {
+		fill: $white;
 
-    .home & {
-      fill: $color-dark-gray;
-    }
-    ._solid & {
-      fill: $white !important;
-    }
-  }
+		.home & {
+			fill: $color-dark-gray;
+		}
+		._solid & {
+			fill: $white !important;
+		}
+	}
 }
 
 .logo svg {
-  height: 39px;
-  transform-origin: center right;
-  transition: 0.25s ease-in-out;
-  width: 100px;
+	height: 39px;
+	transform-origin: center right;
+	transition: 0.25s ease-in-out;
+	width: 100px;
 
-  ._scrolling & {
-    height: 31px;
-    width: 80px;
-  }
+	._scrolling & {
+		height: 31px;
+		width: 80px;
+	}
 
-  @include breakpoint(medium) {
-    height: 54px;
-    width: 140px;
+	@include breakpoint(medium) {
+		height: 54px;
+		width: 140px;
 
-    ._scrolling & {
-      height: 43px;
-      width: 112px;
-    }
-  }
+		._scrolling & {
+			height: 43px;
+			width: 112px;
+		}
+	}
 
-  @include breakpoint(xlarge) {
-    height: 66px;
-    width: 170px;
+	@include breakpoint(xlarge) {
+		height: 66px;
+		width: 170px;
 
-    ._scrolling & {
-      height: 66px;
-      width: 170px;
-    }
-  }
+		._scrolling & {
+			height: 66px;
+			width: 170px;
+		}
+	}
 }
 
 .menu-toggle {
-  cursor: pointer;
-  display: block;
-  overflow: hidden;
-  padding: 7px;
-  position: fixed;
+	cursor: pointer;
+	display: block;
+	overflow: hidden;
+	padding: 7px;
+	position: fixed;
 
-  @include breakpoint(large) {
-    display: none;
-  }
+	@include breakpoint(large) {
+		display: none;
+	}
 
-  span {
-    background-color: $white;
-    display: block;
-    height: 2px;
-    margin-bottom: 3px;
-    width: 20px;
+	span {
+		background-color: $white;
+		display: block;
+		height: 2px;
+		margin-bottom: 3px;
+		width: 20px;
 
-    .home & {
-      background-color: $color-dark-gray;
-    }
-    ._solid & {
-      background-color: $white !important;
-    }
+		.home & {
+			background-color: $color-dark-gray;
+		}
+		._solid & {
+			background-color: $white !important;
+		}
 
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
 }
 
 .close-button {
-  color: $white !important;
-  font-size: 2em;
-  left: 1rem;
-  outline: none !important;
-  right: auto;
-  top: 1rem;
+	color: $white !important;
+	font-size: 2em;
+	left: 1rem;
+	outline: none !important;
+	right: auto;
+	top: 1rem;
 }
 
 .skip-link {
 }
 
-
 .entry-header {
 }
 
 .home .hentry {
-  overflow: hidden;
+	overflow: hidden;
 }
 
 .entryBanner {
-  background-color: $color-navy;
-  height: 100vh;
-  width: 100%;
+	background-color: $color-navy;
+	height: 100vh;
+	width: 100%;
 }
 
 .entryBanner_banner {
-  background-color: $color-navy;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
+	background-color: $color-navy;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
 
-  .home & {
-    background-position: right center;
-    opacity: 0;
-    transform: scale(1.05) perspective(1000px);
-    transform-origin: center top;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    backface-visibility: hidden;
+	.home & {
+		background-position: right center;
+		opacity: 0;
+		transform: scale(1.05) perspective(1000px);
+		transform-origin: center top;
+		-webkit-transition: 1s;
+		-moz-transition: 1s;
+		-o-transition: 1s;
+		transition: 1s;
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		-o-backface-visibility: hidden;
+		backface-visibility: hidden;
 
-    @include breakpoint(medium) {
-      background-position: center center;
-    }
-  }
-  ._animating & {
-    opacity: 1;
-    transform:scale(1);
-  }
+		@include breakpoint(medium) {
+			background-position: center center;
+		}
+	}
+	._animating & {
+		opacity: 1;
+		transform: scale(1);
+	}
 }
 
 .entryBanner_contentInner {
-  height: 100vh;
-  position: relative;
-  width: 100vw;
+	height: 100vh;
+	position: relative;
+	width: 100vw;
 }
 
 .entryBanner_content {
-  color: $white;
-  height: 100vh;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1;
+	color: $white;
+	height: 100vh;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
 
-  .home & {
-    animation: drawer 5s 1s ease-in-out forwards;
-    overflow: hidden;
-    width: 0;
-  }
+	.home & {
+		animation: drawer 5s 1s ease-in-out forwards;
+		overflow: hidden;
+		width: 0;
+	}
 
-  // ._step_1 & {
-  //   opacity: 1;
-  // }
-  // ._step_2 &,
-  // ._step_3 & {
-  //   opacity: 0;
-  // }
+	// ._step_1 & {
+	//   opacity: 1;
+	// }
+	// ._step_2 &,
+	// ._step_3 & {
+	//   opacity: 0;
+	// }
 
-  .row {
-    top: 35vh;
-    position: absolute;
-    width: 100%;
+	.row {
+		top: 35vh;
+		position: absolute;
+		width: 100%;
 
-    .home & {
-      top: 45vh;
-    }
-  }
+		.home & {
+			top: 45vh;
+		}
+	}
 
-  h1 {
-    color: $white;
-  }
+	h1 {
+		color: $white;
+	}
 }
-
 
 @keyframes drawer {
-  0% {
-    width: 0;
-  }
-  30%, 100% {
-    width: 100%;
-  }
+	0% {
+		width: 0;
+	}
+	30%,
+	100% {
+		width: 100%;
+	}
 }
 
-
 .entryIntro {
-  @extend %baskerville;
-  font-size: rem-calc(29);
-  font-weight: 400;
-  line-height: 1.35;
+	@extend %baskerville;
+	font-size: rem-calc(29);
+	font-weight: 400;
+	line-height: 1.35;
 
-  .home & {
-    max-width: none;
-  }
+	.home & {
+		max-width: none;
+	}
 
-  @include breakpoint(medium) {
-    font-size: rem-calc(45);
-    .home & {
-      font-size: rem-calc(60);
-    }
-  }
+	@include breakpoint(medium) {
+		font-size: rem-calc(45);
+		.home & {
+			font-size: rem-calc(60);
+		}
+	}
 
-  @include breakpoint(large) {
-    font-size: rem-calc(52);
-    padding-right: rem-calc(40);
-    .home & {
-      font-size: rem-calc(70);
-    }
-  }
+	@include breakpoint(large) {
+		font-size: rem-calc(52);
+		padding-right: rem-calc(40);
+		.home & {
+			font-size: rem-calc(70);
+		}
+	}
 
-  @include breakpoint(xlarge) {
-    font-size: rem-calc(62);
-    .home & {
-      font-size: rem-calc(85);
-    }
-  }
+	@include breakpoint(xlarge) {
+		font-size: rem-calc(62);
+		.home & {
+			font-size: rem-calc(85);
+		}
+	}
 
-  @include breakpoint(xxlarge) {
-    font-size: rem-calc(75);
-    .home & {
-      font-size: rem-calc(100);
-    }
-  }
+	@include breakpoint(xxlarge) {
+		font-size: rem-calc(75);
+		.home & {
+			font-size: rem-calc(100);
+		}
+	}
 }
 
 .svg_wrap {
-  bottom: 0;
-  height: 0;
-  left: -88%;
-  opacity: 0;
-  padding-bottom: 138%;
-  position: absolute;
-  width: 320%;
-  z-index: -1;
+	bottom: 0;
+	height: 0;
+	left: -88%;
+	opacity: 0;
+	padding-bottom: 138%;
+	position: absolute;
+	width: 320%;
+	z-index: -1;
 
-  @include breakpoint(small-medium) {
-    left: auto;
-    padding-bottom: 39%;
-    right: 0;
-    width: 90%;
-    z-index: -1;
-  }
+	@include breakpoint(small-medium) {
+		left: auto;
+		padding-bottom: 39%;
+		right: 0;
+		width: 90%;
+		z-index: -1;
+	}
 
-  ._animating & {
-    animation: fadeItIn 0.5s 2s ease-in-out forwards;
-  }
+	._animating & {
+		animation: fadeItIn 0.5s 2s ease-in-out forwards;
+	}
 }
 
 svg.banner_mark {
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
 @keyframes fadeItIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0.5;
-  }
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0.5;
+	}
 }
 
 .banner_link {
-  @include icon(arrow, before);
-  color: $white;
-  font-size: rem-calc(12);
-  display: inline-block;
-  height: 35px;
-  line-height: 35px;
-  margin-top: 25px;
-  padding-left: 50px;
-  position: relative;
-  font-weight: 700;
+	@include icon(arrow, before);
+	color: $white;
+	font-size: rem-calc(12);
+	display: inline-block;
+	height: 35px;
+	line-height: 35px;
+	margin-top: 25px;
+	padding-left: 50px;
+	position: relative;
+	font-weight: 700;
 
-  &:hover {
-    color: $color-dark-tan;
-    &:before {
-      border-color: $color-dark-tan;
-    }
-  }
+	&:hover {
+		color: $color-dark-tan;
+		&:before {
+			border-color: $color-dark-tan;
+		}
+	}
 
-  &:before {
-    border: 1px solid $color-light-tan;
-    border-radius: 35px;
-    display: block;
-    font-size: rem-calc(17);
-    height: 35px;
-    left: 0;
-    line-height: 35px;
-    position: absolute;
-    text-align: center;
-    transform: rotate(-90deg);
-    width: 35px;
-  }
+	&:before {
+		border: 1px solid $color-light-tan;
+		border-radius: 35px;
+		display: block;
+		font-size: rem-calc(17);
+		height: 35px;
+		left: 0;
+		line-height: 35px;
+		position: absolute;
+		text-align: center;
+		transform: rotate(-90deg);
+		width: 35px;
+	}
 }
 
 .entryBanner_nav {
-  bottom: 1.5em;
-  position: fixed;
-  text-align: center;
-  width: 100%;
-  z-index: 10;
+	bottom: 1.5em;
+	position: fixed;
+	text-align: center;
+	width: 100%;
+	z-index: 10;
 }
 
 .entryBanner_more {
-  @include icon(arrow,before);
-  color: $white !important;
-  display: inline-block;
-  font-size: 1.5em;
-  span {
-    display: none;
-  }
+	@include icon(arrow, before);
+	color: $white !important;
+	display: inline-block;
+	font-size: 1.5em;
+	span {
+		display: none;
+	}
 }

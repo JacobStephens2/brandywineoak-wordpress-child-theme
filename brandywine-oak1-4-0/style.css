@@ -1,11 +1,11 @@
 /*
- Theme Name:   Brandywine Oak 1.3
+ Theme Name:   Brandywine Oak 1.4
  Theme URI:    https://15eastcreative.com
  Description:  Wyeth Child Theme for Brandywine Oak
  Author:       Jacob Stephens and Melodee Stephens of 15 East Creative
  Author URI:   https://15eastcreative.com
  Template:     wyeth
- Version:      1.3.0
+ Version:      1.4.0
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         responsive-layout
@@ -413,9 +413,13 @@ body {
 }
 
 .subhead {
-	font-size: 1rem;
+	font-size: 1.5rem;
 	margin-bottom: 1rem;
 	margin-top: 2rem;
+}
+
+.subhead {
+	font-size: 1rem;
 }
 
 .subhead.first {

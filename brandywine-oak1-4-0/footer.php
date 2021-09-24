@@ -37,11 +37,21 @@
         <div class="cell small-12 medium-6 small-order-1 medium-order-2">
           <nav class="legalNav">
             <ul class="legalMenu">
-				
-              <?php if(! is_front_page() && get_field('disclosure_download','options')): ?>
+
+              <li><a href="/privacy-policy">Privacy Policy</a></li>
+
+              <!-- Link to Form CRS on homepage only -->
+              <?php 
+                if( is_front_page())
+                  echo "<li><a href='wp-content/uploads/2021/09/Form-CRS-Document_Updated-August-11-2021.pdf'>Form CRS</a></li>";
+              ?>
+
+              <!-- show disclosure in footer -->
+              <?php get_field('disclosure_download', 'options') ?>         
                 <li><a href="<?= get_field('disclosure_download','options') ?>">Disclosure</a></li>
-              <?php endif; ?>
-				<?php
+
+              <!-- Next -->
+              <?php
                 wp_nav_menu( array(
                   'container'      => '',
                   'items_wrap'     => '%3$s',
@@ -53,7 +63,7 @@
           </nav>
         </div>
         <div class="cell small-12 medium-6 medium-order-1 small-order-2">
-          <p style="<?= (is_front_page() ? 'color: #b2ad96;' : '') ?>"&copy; Brandywine Oak Private Wealth <?= date('Y') ?>. All rights reserved.</p>
+			<p style="<?= (is_front_page() ? 'color: #b2ad96;' : '') ?>">&copy; Brandywine Oak Private Wealth <?= date('Y') ?>. All rights reserved.</p>
         </div>
       </div>
     </div>
@@ -61,6 +71,12 @@
 
 </div><!-- #page -->
 
+
 <?php wp_footer(); ?>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 </body>
 </html>
