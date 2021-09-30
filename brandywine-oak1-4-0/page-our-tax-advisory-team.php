@@ -20,10 +20,8 @@
   <div class="entry-content">
     <?php
       if( have_rows('page_content') ) {
-        while ( have_rows('page_content') ) {
           the_row();
           include(locate_template( 'template-parts/flexible/flexible-tax_team_grid.php', false, false ));
-        }
       }
     ?>
   </div>
