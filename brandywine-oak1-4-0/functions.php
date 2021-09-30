@@ -8,40 +8,341 @@ function my_theme_enqueue_styles() {
     );
 }
 
-// add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
-// function my_theme_enqueue_styles() {
-//     $parenthandle = 'wyeth-style'; // This is 'twentyfifteen-style' for the Twenty Fifteen theme.
-//     $theme = wp_get_theme();
-//     wp_enqueue_style( $parenthandle, get_template_directory_uri() . '/style.css', 
-//         array(),  // if the parent theme code has a dependency, copy it to here
-//         $theme->parent()->get('Version')
-//     );
-//     wp_enqueue_style( 'child-style', get_stylesheet_uri(),
-//         array( $parenthandle ),
-//         $theme->get('Version') // this only works if you have Version in the style header
-//     );
-// }
+/**
+ * Register Custom Post Type for Tax People
+ */
+function brandywine_oak_create_post_types() {
+  register_post_type( 'taxperson',
+    array(
+      'labels' => array(
+        'name' => __( 'Tax Advisory People' ),
+        'singular_name' => __( 'Tax Advisory Person' )
+      ),
+      'menu_icon'=>'dashicons-groups',
+      'public' => true,
+      'publicly_queryable' => true,
+      'hierarchical' => false,
+      'has_archive' => false,
+      'query_var' => true,
+      'rewrite' => array(
+         'slug' => 'about-our-firm/our-tax-advisory-team',
+         'with_front' => false
+      ),
+      'supports' => array( 'title', 'editor' ),
+    )
+  );
+}
+add_action( 'init', 'brandywine_oak_create_post_types' );
 
-// Queue parent style followed by child/customized style
-// add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles', 10);
-
-// function theme_enqueue_styles() {
-//     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
-//     wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/styles/child-style.css', array( 'parent-style' ) );
-// }
-
-// add_action( 'wp_enqueue_scripts()', 'my_theme_enqueue_styles' );
-// function my_theme_enqueue_styles() {
-//     wp_enqueue_style( 'parent-style', 
-// 		get_template_directory_uri() . '/style.css' );
-// 	wp_enqueue_style( 'wyeth-style', 
-// 		get_template_directory_uri() . '/app.css' );
-// 	wp_enqueue_style( 'parent-custom-style', 
-// 		get_template_directory_uri() . '/custom.css' );
-// 	wp_enqueue_style( 'child-style', 
-// 		get_stylesheet_directory_uri() . '/style.css', 
-// 		array('parent-style', 'parent-app-style', 'parent-custom-style'), 
-// 		wp_get_theme()->get('Version')
-// 	);
-// }
+  // Add Tax Person Fields 
+  acf_add_local_field_group(array(
+    'key' => 'group_5b4eb64d08623',
+    'title' => 'Person Content',
+    'fields' => array(
+      array(
+        'key' => 'field_5b4eb6b18fa07',
+        'label' => 'Person Name',
+        'name' => 'person_name',
+        'type' => 'text',
+        'instructions' => '',
+        'required' => 1,
+        'conditional_logic' => 0,
+        'wrapper' => array(
+          'width' => '50',
+          'class' => '',
+          'id' => '',
+        ),
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'maxlength' => '',
+      ),
+      array(
+        'key' => 'field_5b4eb70c8fa09',
+        'label' => 'Job Titles',
+        'name' => 'job_titles',
+        'type' => 'repeater',
+        'instructions' => '',
+        'required' => 0,
+        'conditional_logic' => 0,
+        'wrapper' => array(
+          'width' => '50',
+          'class' => '',
+          'id' => '',
+        ),
+        'collapsed' => '',
+        'min' => 0,
+        'max' => 0,
+        'layout' => 'table',
+        'button_label' => '',
+        'sub_fields' => array(
+          array(
+            'key' => 'field_5b4eb7228fa0a',
+            'label' => 'Text',
+            'name' => 'text',
+            'type' => 'text',
+            'instructions' => '',
+            'required' => 1,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+              'width' => '50',
+              'class' => '',
+              'id' => '',
+            ),
+            'default_value' => '',
+            'placeholder' => '',
+            'prepend' => '',
+            'append' => '',
+            'maxlength' => '',
+          ),
+        ),
+      ),
+      array(
+        'key' => 'field_5b4eb6e98fa08',
+        'label' => 'Person Credentials',
+        'name' => 'person_credentials',
+        'type' => 'text',
+        'instructions' => '',
+        'required' => 0,
+        'conditional_logic' => 0,
+        'wrapper' => array(
+          'width' => '33',
+          'class' => '',
+          'id' => '',
+        ),
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'maxlength' => '',
+      ),
+      array(
+        'key' => 'field_5b4eb825ebfe0',
+        'label' => 'Person Email',
+        'name' => 'person_email',
+        'type' => 'email',
+        'instructions' => '',
+        'required' => 0,
+        'conditional_logic' => 0,
+        'wrapper' => array(
+          'width' => '33',
+          'class' => '',
+          'id' => '',
+        ),
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+      ),
+      array(
+        'key' => 'field_5b4eb832ebfe1',
+        'label' => 'Person LinkedIn',
+        'name' => 'person_linkedin',
+        'type' => 'url',
+        'instructions' => '',
+        'required' => 0,
+        'conditional_logic' => 0,
+        'wrapper' => array(
+          'width' => '33',
+          'class' => '',
+          'id' => '',
+        ),
+        'default_value' => '',
+        'placeholder' => '',
+      ),
+      array(
+        'key' => 'field_5b4eb801ebfdf',
+        'label' => 'Person Image',
+        'name' => 'person_image',
+        'type' => 'image',
+        'instructions' => 'Grid Image - 800px x 570px @72dpi',
+        'required' => 1,
+        'conditional_logic' => 0,
+        'wrapper' => array(
+          'width' => '50',
+          'class' => '',
+          'id' => '',
+        ),
+        'return_format' => 'url',
+        'preview_size' => 'thumbnail',
+        'library' => 'all',
+        'min_width' => '',
+        'min_height' => '',
+        'min_size' => '',
+        'max_width' => '',
+        'max_height' => '',
+        'max_size' => '',
+        'mime_types' => '',
+      ),
+      array(
+        'key' => 'field_5b4eb801ebfdfport',
+        'label' => 'Person Portrait Image',
+        'name' => 'person_portrait_image',
+        'type' => 'image',
+        'instructions' => 'Bio Image - 700px x 1000px @72dpi',
+        'required' => 1,
+        'conditional_logic' => 0,
+        'wrapper' => array(
+          'width' => '50',
+          'class' => '',
+          'id' => '',
+        ),
+        'return_format' => 'url',
+        'preview_size' => 'thumbnail',
+        'library' => 'all',
+        'min_width' => '',
+        'min_height' => '',
+        'min_size' => '',
+        'max_width' => '',
+        'max_height' => '',
+        'max_size' => '',
+        'mime_types' => '',
+      ),
+      array(
+        'key' => 'field_5b569fc5a82ecpers',
+        'label' => 'Watermark',
+        'name' => 'watermark',
+        'type' => 'repeater',
+        'instructions' => '',
+        'required' => 0,
+        'conditional_logic' => 0,
+        'wrapper' => array(
+          'width' => '',
+          'class' => '',
+          'id' => '',
+        ),
+        'collapsed' => '',
+        'min' => 0,
+        'max' => 1,
+        'layout' => 'table',
+        'button_label' => '',
+        'sub_fields' => array(
+          array(
+            'key' => 'field_5b569ffca82edpers',
+            'label' => 'Watermark',
+            'name' => 'watermark',
+            'type' => 'select',
+            'instructions' => '',
+            'required' => 1,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+              'width' => '',
+              'class' => '',
+              'id' => '',
+            ),
+            'choices' => array(
+              'th' => 'th',
+              'w' => 'w',
+              'wyeth' => 'wyeth',
+              'y' => 'y',
+              'bo' => 'bo',
+              'ico' => 'ico'
+            ),
+            'default_value' => array(
+              0 => 'th',
+            ),
+            'allow_null' => 0,
+            'multiple' => 0,
+            'ui' => 0,
+            'ajax' => 0,
+            'return_format' => 'value',
+            'placeholder' => '',
+          ),
+          array(
+            'key' => 'field_5b56a032a82eepers',
+            'label' => 'Size',
+            'name' => 'size',
+            'type' => 'select',
+            'instructions' => '',
+            'required' => 1,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+              'width' => '',
+              'class' => '',
+              'id' => '',
+            ),
+            'choices' => array(
+              'full' => 'full',
+              'half' => 'half',
+            ),
+            'default_value' => array(
+              0 => 'full',
+            ),
+            'allow_null' => 0,
+            'multiple' => 0,
+            'ui' => 0,
+            'ajax' => 0,
+            'return_format' => 'value',
+            'placeholder' => '',
+          ),
+          array(
+            'key' => 'field_5b56a05ea82efpers',
+            'label' => 'X Position (Percent)',
+            'name' => 'watermark_x',
+            'type' => 'number',
+            'instructions' => '',
+            'required' => 1,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+              'width' => '',
+              'class' => '',
+              'id' => '',
+            ),
+            'default_value' => '',
+            'placeholder' => '',
+            'prepend' => '',
+            'append' => '',
+            'min' => '',
+            'max' => '',
+            'step' => '',
+          ),
+          array(
+            'key' => 'field_5b56a07ea82f0pers',
+            'label' => 'Y Position (Percent)',
+            'name' => 'watermark_y',
+            'type' => 'number',
+            'instructions' => '',
+            'required' => 1,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+              'width' => '',
+              'class' => '',
+              'id' => '',
+            ),
+            'default_value' => '',
+            'placeholder' => '',
+            'prepend' => '',
+            'append' => '',
+            'min' => '',
+            'max' => '',
+            'step' => '',
+          ),
+        ),
+      ),
+    ),
+    'location' => array(
+      array(
+        array(
+          'param' => 'post_type',
+          'operator' => '==',
+          'value' => 'taxperson',
+        ),
+      ),
+    ),
+    'menu_order' => 0,
+    'position' => 'normal',
+    'style' => 'default',
+    'label_placement' => 'top',
+    'instruction_placement' => 'label',
+    'hide_on_screen' => array(
+      0 => 'discussion',
+      1 => 'comments',
+      2 => 'format',
+      3 => 'categories',
+      4 => 'tags',
+    ),
+    'active' => 1,
+    'description' => '',
+  ));
 
