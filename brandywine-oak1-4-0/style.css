@@ -520,3 +520,11 @@ body {
 .tax-advisory-team-header {
   background-color: #283854;
 }
+
+div.column.contact_block a {
+  border: none;
+}
+
+div.contentBlock.contentBlock--main {
+  padding-bottom: 9rem;
+}
