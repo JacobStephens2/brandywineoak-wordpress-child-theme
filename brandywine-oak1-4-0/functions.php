@@ -346,78 +346,6 @@ add_action( 'init', 'brandywine_oak_create_post_types' );
     'description' => '',
   ));
 
-  // Page Content Contact Block
-  acf_add_local_field_group(array(
-    'key' => 'group_X0c97VKjiaSX',
-    'title' => 'Contact Content',
-    'fields' => array(
-      array(
-        'key' => 'field_tZ46YN2Gjvj1',
-        'label' => 'Contact Content',
-        'name' => 'contact_content',
-        'type' => 'flexible_content',
-        'instructions' => '',
-        'required' => 0,
-        'conditional_logic' => 0,
-        'wrapper' => array(
-          'width' => '',
-          'class' => '',
-          'id' => '',
-        ),
-        'layouts' => array(
-          'bVm93hoIu61g' => array(
-            'key' => 'bVm93hoIu61g',
-            'name' => 'contact_block',
-            'label' => 'Contact Block',
-            'display' => 'block',
-            'sub_fields' => array(
-              array(
-                'key' => 'field_5b4ea60f758f1',
-                'label' => 'Title',
-                'name' => 'title',
-                'type' => 'text',
-                'instructions' => '',
-                'required' => 0,
-                'conditional_logic' => 0,
-                'wrapper' => array(
-                  'width' => '',
-                  'class' => '',
-                  'id' => '',
-                ),
-                'default_value' => '',
-                'placeholder' => '',
-                'prepend' => '',
-                'append' => '',
-                'maxlength' => '',
-              ),
-              array(
-                'key' => 'field_5b4ea6a7758f4',
-                'label' => 'Main Content',
-                'name' => 'main_content',
-                'type' => 'wysiwyg',
-                'instructions' => '',
-                'required' => 0,
-                'conditional_logic' => 0,
-                'wrapper' => array(
-                  'width' => '',
-                  'class' => '',
-                  'id' => '',
-                ),
-                'default_value' => '',
-                'tabs' => 'all',
-                'toolbar' => 'full',
-                'media_upload' => 1,
-                'delay' => 0,
-              ),
-            ),
-            'min' => '',
-            'max' => '',
-          ),
-        ),
-      ),
-    ),
-  ));
-
     // Page Content
     acf_add_local_field_group(array(
       'key' => 'group_5b4ea41e20ed4',
@@ -837,9 +765,9 @@ add_action( 'init', 'brandywine_oak_create_post_types' );
                   'maxlength' => '',
                 ),
                 array(
-                  'key' => 'field_5b4ea6a7758f4',
-                  'label' => 'Main Content',
-                  'name' => 'main_content',
+                  'key' => 'field_Mf306gJVRlh0',
+                  'label' => 'Main Contact',
+                  'name' => 'main_contact',
                   'type' => 'wysiwyg',
                   'instructions' => '',
                   'required' => 0,
