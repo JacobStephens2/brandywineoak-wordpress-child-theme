@@ -935,8 +935,7 @@ if( function_exists('acf_add_local_field_group') ):
                 'label' => 'Large Image',
                 'name' => 'large_image',
                 'type' => 'image',
-                'instructions' => 'Hidden on Mobile Screens
-  1000px x 650px @ 72dpi',
+                'instructions' => 'Hidden on Mobile Screens 1000px x 650px @ 72dpi',
                 'required' => 1,
                 'conditional_logic' => 0,
                 'wrapper' => array(
