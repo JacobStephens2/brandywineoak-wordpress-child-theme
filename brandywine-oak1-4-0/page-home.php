@@ -432,7 +432,7 @@
   <div class="bo-display-desktop">
     <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
-        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2021/04/Accolades-Desktop-Mar21_smaller-v3.jpg" alt="Row of Brandywine Oak Accolades" class="bo-horizontal-center">
+        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2021/09/Accolades-Desktop-Sep21-scaled.jpg" alt="Row of Brandywine Oak Accolades" class="bo-horizontal-center">
       </div>
     </div>
   </div>
@@ -441,13 +441,19 @@
   <div class="bo-display-tablet">
     <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
-        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2021/04/AccoladesTabletv4.jpg" alt="Two Rows of Brandywine Oak Accolades" class="bo-horizontal-center">
+        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2021/09/Accolades-Tablet_Sep21-scaled.jpg" alt="Two Rows of Brandywine Oak Accolades" class="bo-horizontal-center">
       </div>
     </div>
   </div>
 
   <!-- Mobile view -->
   <div class="bo-accolades-mobile">
+
+    <div class="card bg-primary" style="margin-bottom: 0px;">
+      <div class="card-body text-center bo-vertical-center">
+        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2021/09/SHOOK-Badge-NextGen-Color.jpg" alt="2021 Forbes Best-In-State Wealth Advisors" id="bo-horizontal-center">
+      </div>
+    </div>
 
     <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
