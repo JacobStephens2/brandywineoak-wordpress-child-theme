@@ -43,7 +43,7 @@
               <!-- Link to Form CRS on homepage only -->
               <?php 
                 if( is_front_page())
-                  echo "<li><a href='wp-content/uploads/2021/09/Form-CRS-Document_Updated-August-11-2021.pdf'>Form CRS</a></li>";
+                  echo "<li><a href='wp-content/uploads/2021/10/Form-CRS-Document_Updated-August-11-2021-1.pdf'>Form CRS</a></li>";
               ?>
 
               <!-- show disclosure in footer -->

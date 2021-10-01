@@ -521,6 +521,54 @@ body {
   background-color: #283854;
 }
 
+.contact-block h1.entry-title {
+  text-transform: initial;
+}
+
+@media screen and (min-width: 87.5em) {
+  .contact-block h1.entry-title {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 74em) {
+  .contact-block h1.entry-title {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .contact-block h1.entry-title {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .contact-block h1.entry-title {
+    font-size: 3rem;
+  }
+  .contact-flex-large {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 39em) {
+  div.contact {
+    grid-template-areas: "address addresstwo" "contact contacttwo";
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  div.column.address-block-grid {
+    grid-area: address;
+  }
+
+  div.column.contact-block-grid {
+    grid-area: contact;
+  }
+}
+
 div.column.contact_block a {
   border: none;
 }
