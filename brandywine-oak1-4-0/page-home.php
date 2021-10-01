@@ -441,7 +441,7 @@
   <div class="bo-display-tablet">
     <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
-        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2021/09/Accolades-Tablet_Sep21-scaled.jpg" alt="Two Rows of Brandywine Oak Accolades" class="bo-horizontal-center">
+        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2021/09/Accolades-Tablet_Sep21-1.jpg" alt="Two Rows of Brandywine Oak Accolades" class="bo-horizontal-center">
       </div>
     </div>
   </div>
