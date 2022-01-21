@@ -415,14 +415,16 @@
   </div>
 </div>
 
+
     <!--/ video snapshot -->
   <div id="main-video">
     <span class="close-window" onclick="lightbox_close_custom();">X</span>
-      <video id="video-content" width="100%" controls>
-        <source src="<?php echo get_site_url(); ?>/wp-content/uploads/2019/12/BrandyWineOak_191029.mp4" type="video/mp4">
-      </video>
+      <div id="video-content" width="100%">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/arar9gRX37k?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
   </div>
-            </div>
+
+  </div>
 
   
    <!-- Accolades -->
