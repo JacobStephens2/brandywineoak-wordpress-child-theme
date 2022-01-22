@@ -576,3 +576,13 @@ div.column.contact_block a {
 div.contentBlock.contentBlock--main {
   padding-bottom: 9rem;
 }
+
+#main-video .close-window { 
+    float: right;
+    display: inline-block; 
+    color:#000; 
+    font-weight: bold; 
+    font-family: arial, sans-serif; 
+    font-size: 13px; 
+    cursor: pointer; 
+}
