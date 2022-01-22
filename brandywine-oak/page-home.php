@@ -401,14 +401,12 @@
   <div class="card">
     <div class="card-body bo-2-column bo-mobile-padding">
               <h1 class="bo-news">LEARN MORE</h1>
-              <p class="bo-title">Hear from our founders</p>
-              <!-- <img style="max-width: 50px; break-after: always" src="<?php echo get_site_url(); ?>/wp-content/themes/brandywine-oak/images/Brandywine_Oak_LogoSymbol_White_RGB.png" alt="Brandywine Oak White Logo"> -->
+              <p class="bo-title">An Exciting Update from Brandywine Oak</p>
               <a href="#" onclick="lightbox_open_custom();"><img src="<?php echo get_template_directory_uri(); ?>/img/video_thumbnail.png"></a>
             </div>
           </div>
         </div>
           <div class="bo-title bo-hide-mobile">
-            <!-- <h1 class="bo-news">LEARN MORE</h1> -->
           </div>
         </div>
     </div>
