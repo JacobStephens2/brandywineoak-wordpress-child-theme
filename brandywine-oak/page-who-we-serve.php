@@ -50,117 +50,79 @@
         </div>
       </div>
     </div>
-    
-    <div
-      class="textSlideshow slick-initialized slick-slider slick-dotted"
-      data-js-component="textSlideshow"
-    >
-      <div class="slick-list draggable">
-        <div
-          class="slick-track"
-          style="
-            opacity: 1;
-            width: 5803px;
-            transform: translate3d(-2487px, 0px, 0px);
-          "
-        >
-          <div
-            class="textSlideshow_slide slick-slide slick-current slick-active"
-            data-slick-index="2"
-            aria-hidden="false"
-            tabindex="0"
-            role="tabpanel"
-            id="slick-slide02"
-            aria-describedby="slick-slide-control02"
-            style="width: 829px"
-          >
-            <p>
-              Successful investing is singles and doubles, not home runs. Wealthy
-              families hire our firm to manage their wealth responsibly and not
-              swing for the fences.
-            </p>
-          </div>
-          <div
-            class="textSlideshow_slide slick-slide slick-cloned"
-            data-slick-index="3"
-            aria-hidden="true"
-            tabindex="-1"
-            style="width: 829px"
-          >
-            <p>
-              We feel the more a family plans, the more the family will keep. In our
-              experience it is far better to prepare than it is to repair.
-            </p>
-          </div>
-          <div
-            class="textSlideshow_slide slick-slide slick-cloned"
-            data-slick-index="4"
-            aria-hidden="true"
-            tabindex="-1"
-            style="width: 829px"
-          >
-            <p>
-              The biggest void for families in investment advice is being
-              intentional around their finances. The conversation in our view has to
-              be around cash flow and lifestyle rather than short-term performance
-              and market commentary.
-            </p>
-          </div>
-          <div
-            class="textSlideshow_slide slick-slide slick-cloned"
-            data-slick-index="5"
-            aria-hidden="true"
-            tabindex="-1"
-            style="width: 829px"
-          >
-            <p>
-              Successful investing is singles and doubles, not home runs. Wealthy
-              families hire our firm to manage their wealth responsibly and not
-              swing for the fences.
-            </p>
-          </div>
-        </div>
-      </div>
 
-      <ul class="slick-dots" role="tablist" style="">
-        <li class="" role="presentation">
-          <button
-            type="button"
-            role="tab"
-            id="slick-slide-control00"
-            aria-controls="slick-slide00"
-            aria-label="1 of 3"
-            tabindex="-1"
-          >
-            1
-          </button>
-        </li>
-        <li role="presentation" class="">
-          <button
-            type="button"
-            role="tab"
-            id="slick-slide-control01"
-            aria-controls="slick-slide01"
-            aria-label="2 of 3"
-            tabindex="-1"
-          >
-            2
-          </button>
-        </li>
-        <li role="presentation" class="slick-active">
-          <button
-            type="button"
-            role="tab"
-            id="slick-slide-control02"
-            aria-controls="slick-slide02"
-            aria-label="3 of 3"
-            tabindex="0"
-            aria-selected="true"
-          >
-            3
-          </button>
-        </li>
-      </ul>
+<style>
+.carousel {
+  display: grid;
+}
+.carousel p {
+    font-size: 27px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+    padding: 9rem 1rem 0;
+    font-family: "Gotham A","Gotham B","Arial",Sans-Serif;
+}
+.slide-1 {
+  animation-name: fadeinandout1;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+.slide-2 {
+  animation-name: fadeinandout2;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+.slide-3 {
+  animation-name: fadeinandout3;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+@keyframes fadeinandout1 {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  23% { opacity: 1; }
+  33% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@keyframes fadeinandout2 {
+  0% { opacity: 0; }
+  33% { opacity: 0; }
+  43% { opacity: 1; }
+  56% { opacity: 1; }
+  66% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@keyframes fadeinandout3 {
+  0% { opacity: 0; }
+  66% { opacity: 0; }
+  76% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+</style>
+
+    <div class="carousel">
+      <p class="slide-1">
+        Successful investing is singles and doubles, not home runs. Wealthy
+        families hire our firm to manage their wealth responsibly and not
+        swing for the fences.
+      </p>
+      <p class="slide-2">
+        We feel the more a family plans, the more the family will keep. In our
+        experience it is far better to prepare than it is to repair.
+      </p>
+      <p class="slide-3">
+        The biggest void for families in investment advice is being
+        intentional around their finances. The conversation in our view has to
+        be around cash flow and lifestyle rather than short-term performance
+        and market commentary.
+      </p>
+    </div>
+
     </div>
   </div>
 
