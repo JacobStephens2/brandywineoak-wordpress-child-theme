@@ -46,62 +46,81 @@
                         aria-controls="offCanvasRight"
                     >
                     </button>
-
-                    <div class="logo">
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                            <?php include 'logo.svg'; ?>
-                        </a>
-                    </div>
-
                     <?php
                         $twitter  = get_field( 'twitter_url', 'options' );
                         $linkedin = get_field( 'linkedin_url', 'options' );
                     ?>
-
-                    <div class="globalNav_wrap multilevel-offcanvas off-canvas in-canvas-for-large position-right clearfix"
-                        id="offCanvasRight" data-js-component="globalNav" data-off-canvas>
+                    <div 
+                        class="globalNav_wrap multilevel-offcanvas off-canvas in-canvas-for-large position-right clearfix"
+                        id="offCanvasRight"
+                        data-js-component="globalNav"
+                        data-off-canvas
+                    >
                         <button class="close-button" aria-label="Close menu" type="button" data-close>
                             <span aria-hidden="true">&times;</span>
                         </button>
                         <nav class="globalNav">
+                            <!-- Menu -->
                             <ul class="globalMenu">
+                                <!-- Logo -->
+                                <div class="logo">
+                                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                                        <?php include 'logo.svg'; ?>
+                                    </a>
+                                </div>
+                                <!-- Pages -->
                                 <?php
-                                wp_nav_menu( array(
-                                    'container'      => '',
-                                    'items_wrap'     => '%3$s',
-                                    'theme_location' => 'primary',
-                                ) );
+                                    wp_nav_menu( array(
+                                        'container'      => '',
+                                        'items_wrap'     => '%3$s',
+                                        'theme_location' => 'primary',
+                                    ) );
                                 ?>
                                 <?php if ( $twitter ): ?>
                                     <li class="hide-for-large social social--twitter">
-                                        <a href="<?php $twitter ?>"><span>Twitter</span></a></li>
+                                        <a href="<?php $twitter ?>">
+                                            <span>Twitter</span>
+                                        </a>
+                                    </li>
                                 <?php endif; ?>
                                 <?php if ( $linkedin ): ?>
-                                    <li class="hide-for-large social social--linkedin"><a
-                                                href="<?php $linkedin ?>"><span>Linkedin</span></a></li>
+                                    <li class="hide-for-large social social--linkedin">
+                                        <a href="<?php $linkedin ?>">
+                                            <span>Linkedin</span>
+                                        </a>
+                                    </li>
                                 <?php endif; ?>
                             </ul>
+                            <!-- Menu End -->
                         </nav><!-- .globalNav -->
                     </div>
                 </div>
             </header><!-- #masthead -->
-
             <ul style="z-index: 999" class="socialMenu show-for-large">
                 <?php if ( $twitter ): ?>
-                    <li style="text-align: center;" class="social social--twitter"><a
-                                href="<?php $twitter ?>"><span>Twitter</span></a></li>
+                    <li style="text-align: center;" class="social social--twitter">
+                        <a href="<?php $twitter ?>">
+                            <span>Twitter</span>
+                        </a>
+                    </li>
                 <?php endif; ?>
                 <?php if ( $linkedin ): ?>
-                    <li style="text-align: center;" class="social social--linkedin"><a
-                                href="<?php $linkedin ?>"><span>Linkedin</span></a></li>
+                    <li style="text-align: center;" class="social social--linkedin">
+                        <a href="<?php $linkedin ?>">
+                            <span>Linkedin</span>
+                        </a>
+                    </li>
                 <?php endif; ?>
-                <li class="social" style="line-height: 0;text-align: center;"><a target="_blank"
-                                                                                style="text-align: center; font-weight: bold;line-height: 18px!important;font-size: 0.85em;"
-                                                                                href="https://brokercheck.finra.org/">Broker<br>Check</a>
+                <li class="social" style="line-height: 0;text-align: center;">
+                    <a
+                        target="_blank"
+                        style="text-align: center; font-weight: bold;line-height: 18px!important;font-size: 0.85em;"
+                        href="https://brokercheck.finra.org/"
+                    >
+                        Broker<br>Check
+                    </a>
                 </li>
-
             </ul>
-
             <div id="content" class="content">
                 <div id="primary" class="content-area">
                     <main id="main" class="site-main">
