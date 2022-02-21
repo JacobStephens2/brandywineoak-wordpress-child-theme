@@ -66,18 +66,16 @@
         text-align: center;
         padding: 9rem 1rem 0;
         font-family: "Gotham A","Gotham B","Arial",Sans-Serif;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
     }
-    .slide {
-      animation-duration: 15s;
-      animation-iteration-count: infinite;
-    }
-    .slide-1 {
+    .carousel p:nth-of-type(1) {
       animation-name: fadeinandout1;
     }
-    .slide-2 {
+    .carousel p:nth-of-type(2) {
       animation-name: fadeinandout2;
     }
-    .slide-3 {
+    .carousel p:nth-of-type(3) {
       animation-name: fadeinandout3;
     }
     @keyframes fadeinandout1 {
@@ -105,16 +103,16 @@
     </style>
 
     <div class="carousel">
-      <p class="slide slide-1">
+      <p>
         Successful investing is singles and doubles, not home runs. Wealthy
         families hire our firm to manage their wealth responsibly and not
         swing for the fences.
       </p>
-      <p class="slide slide-2">
+      <p>
         We feel the more a family plans, the more the family will keep. In our
         experience it is far better to prepare than it is to repair.
       </p>
-      <p class="slide slide-3">
+      <p>
         The biggest void for families in investment advice is being
         intentional around their finances. The conversation in our view has to
         be around cash flow and lifestyle rather than short-term performance
