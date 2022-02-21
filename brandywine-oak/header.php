@@ -64,7 +64,7 @@
                             <ul class="globalMenu">
                                 <!-- Logo -->
                                 <div class="logo">
-                                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" style="border-bottom: none;" rel="home">
                                         <?php include 'logo.svg'; ?>
                                     </a>
                                 </div>
