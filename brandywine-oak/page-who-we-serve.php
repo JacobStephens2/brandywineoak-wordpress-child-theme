@@ -53,14 +53,16 @@
 
     <section id="typical-client">
       <style>
-        .qualities {
-            display: flex;
-            gap: 2.1rem;
+        @media (min-width: 685px) {
+          .qualities {
+              display: flex;
+              gap: 2.1rem;
+          }
         }
         .qualities p:before {
             content: "";
             display: block;
-            margin: 1.5625rem auto 1.25rem;
+            margin: 0 auto 1.25rem;
             width: 3.0517578125rem;
             height: 3.0517578125rem;
             background-image: url(https://brandywineoak.15eastcreative.com/wp-content/uploads/2022/02/circle-check-brandywine-oak.png);
@@ -79,8 +81,7 @@
             max-width: 1200px;
             margin-left: auto;
             margin-right: auto;
-            padding-top: 4rem;
-            padding-bottom: 4rem;
+            padding: 4rem 1rem 2.6rem;
         }
         #typical-client p {
           max-width: 80ch;
@@ -99,6 +100,7 @@
             padding: 1.1rem;
             margin-top: 0.7rem;
             transition: 0.3s;
+            margin-bottom: 1.8rem;
         }
         #typical-client button:hover {
             transform: scale(1.05);
