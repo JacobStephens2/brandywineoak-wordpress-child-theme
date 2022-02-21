@@ -596,6 +596,20 @@ div.contentBlock.contentBlock--main {
   padding: 0;
 }
 
+@media print, screen and (min-width: 40em) {
+  .home div.logo svg {
+    margin-top: -13px;
+  }
+}
+
+.home .globalMenu li.menu-item a {
+  padding-top: 1.3rem;
+}
+
+.globalMenu li.menu-item a {
+  padding-top: 1.5rem;
+}
+
 /*
 			Copyright (C) 2011-2018 Hoefler & Co.
 			This software is the property of Hoefler & Co. (H&Co).
