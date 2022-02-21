@@ -51,77 +51,77 @@
       </div>
     </div>
 
-<style>
-.carousel {
-  display: grid;
-}
-.carousel p {
-    font-size: 27px;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    grid-column: 1;
-    grid-row: 1;
-    text-align: center;
-    padding: 9rem 1rem 0;
-    font-family: "Gotham A","Gotham B","Arial",Sans-Serif;
-}
-.slide-1 {
-  animation-name: fadeinandout1;
-  animation-duration: 15s;
-  animation-iteration-count: infinite;
-}
-.slide-2 {
-  animation-name: fadeinandout2;
-  animation-duration: 15s;
-  animation-iteration-count: infinite;
-}
-.slide-3 {
-  animation-name: fadeinandout3;
-  animation-duration: 15s;
-  animation-iteration-count: infinite;
-}
-@keyframes fadeinandout1 {
-  0% { opacity: 0; }
-  10% { opacity: 1; }
-  23% { opacity: 1; }
-  33% { opacity: 0; }
-  100% { opacity: 0; }
-}
-@keyframes fadeinandout2 {
-  0% { opacity: 0; }
-  33% { opacity: 0; }
-  43% { opacity: 1; }
-  56% { opacity: 1; }
-  66% { opacity: 0; }
-  100% { opacity: 0; }
-}
-@keyframes fadeinandout3 {
-  0% { opacity: 0; }
-  66% { opacity: 0; }
-  76% { opacity: 1; }
-  90% { opacity: 1; }
-  100% { opacity: 0; }
-}
-</style>
+    <!-- Start of Carousel -->
+    <style>
+    .carousel {
+      display: grid;
+    }
+    .carousel p {
+        font-size: 27px;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        grid-column: 1;
+        grid-row: 1;
+        text-align: center;
+        padding: 9rem 1rem 0;
+        font-family: "Gotham A","Gotham B","Arial",Sans-Serif;
+    }
+    .slide {
+      animation-duration: 15s;
+      animation-iteration-count: infinite;
+    }
+    .slide-1 {
+      animation-name: fadeinandout1;
+    }
+    .slide-2 {
+      animation-name: fadeinandout2;
+    }
+    .slide-3 {
+      animation-name: fadeinandout3;
+    }
+    @keyframes fadeinandout1 {
+      0% { opacity: 0; }
+      10% { opacity: 1; }
+      23% { opacity: 1; }
+      33% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    @keyframes fadeinandout2 {
+      0% { opacity: 0; }
+      33% { opacity: 0; }
+      43% { opacity: 1; }
+      56% { opacity: 1; }
+      66% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    @keyframes fadeinandout3 {
+      0% { opacity: 0; }
+      66% { opacity: 0; }
+      76% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+    </style>
 
     <div class="carousel">
-      <p class="slide-1">
+      <p class="slide slide-1">
         Successful investing is singles and doubles, not home runs. Wealthy
         families hire our firm to manage their wealth responsibly and not
         swing for the fences.
       </p>
-      <p class="slide-2">
+      <p class="slide slide-2">
         We feel the more a family plans, the more the family will keep. In our
         experience it is far better to prepare than it is to repair.
       </p>
-      <p class="slide-3">
+      <p class="slide slide-3">
         The biggest void for families in investment advice is being
         intentional around their finances. The conversation in our view has to
         be around cash flow and lifestyle rather than short-term performance
         and market commentary.
       </p>
     </div>
+    <!-- End of Carousel -->
 
     </div>
   </div>
