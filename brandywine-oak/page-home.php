@@ -101,21 +101,22 @@
   <!-- Video Card -->
   <div class="card">
     <div class="card-body bo-2-column bo-mobile-padding">
-              <h1 class="bo-news">LEARN MORE</h1>
-              <p class="bo-title">An Exciting Update from Brandywine Oak</p>
-              <a href="#" onclick="lightbox_open_custom();"><img src="<?php echo get_template_directory_uri(); ?>/img/video_thumbnail.png"></a>
-            </div>
-          </div>
-        </div>
-          <div class="bo-title bo-hide-mobile">
-          </div>
-        </div>
+      <h1 class="bo-news">LEARN MORE</h1>
+      <p class="bo-title">An Exciting Update from Brandywine Oak</p>
+      <a href="#" onclick="lightbox_open_custom();"><img src="<?php echo get_template_directory_uri(); ?>/img/video_thumbnail.png"></a>
     </div>
   </div>
+
 </div>
 
+<div class="bo-title bo-hide-mobile"></div>
 
-    <!--/ video snapshot -->
+</div>
+</div>
+</div>
+</div>
+
+  <!--/ video snapshot -->
   <div id="main-video">
     <span class="close-window" onclick="lightbox_close_custom();">X</span>
       <div id="video-content" width="100%">
@@ -123,17 +124,16 @@
       </div>
   </div>
 
-  </div>
+</div>
 
-  
-   <!-- Accolades -->
-  <div class="card-group">
+<!-- Accolades -->
+<div class="card-group">
   
   <!-- Desktop view -->
   <div class="bo-display-desktop">
     <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
-        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2021/10/Accolades-Desktop-Sep21-smaller.jpg" alt="Row of Brandywine Oak Accolades" class="bo-horizontal-center">
+        <img src="https://brandywineoak.com/wp-content/uploads/2021/10/Accolades-Desktop-Sep21-smaller.jpg" alt="Row of Brandywine Oak Accolades" class="bo-horizontal-center">
       </div>
     </div>
   </div>
@@ -142,7 +142,7 @@
   <div class="bo-display-tablet">
     <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
-        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2021/10/Accolades-Tablet_Sep21.jpg" alt="Two Rows of Brandywine Oak Accolades" class="bo-horizontal-center">
+        <img src="https://brandywineoak.com/wp-content/uploads/2021/10/Accolades-Tablet_Sep21.jpg" alt="Two Rows of Brandywine Oak Accolades" class="bo-horizontal-center">
       </div>
     </div>
   </div>
@@ -152,103 +152,94 @@
 
     <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
-        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2021/10/SHOOK-Badge-NextGen-Color.jpg" alt="2021 Forbes Best-In-State Wealth Advisors" id="bo-horizontal-center">
+        <img src="https://brandywineoak.com/wp-content/uploads/2021/10/SHOOK-Badge-NextGen-Color.jpg" alt="2021 Forbes Best-In-State Wealth Advisors" id="bo-horizontal-center">
       </div>
     </div>
 
     <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
-        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2021/04/2021-Barrons-top1200.png" alt="2021 Barrons Top 1200" id="bo-horizontal-center">
+        <img src="https://brandywineoak.com/wp-content/uploads/2021/04/2021-Barrons-top1200.png" alt="2021 Barrons Top 1200" id="bo-horizontal-center">
       </div>
     </div>
 
     <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
-        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2021/03/Forbes-2021-SHOOK-BestInState.jpg" alt="Forbes 2021 Best in State" id="bo-horizontal-center">
+        <img src="https://brandywineoak.com/wp-content/uploads/2021/03/Forbes-2021-SHOOK-BestInState.jpg" alt="Forbes 2021 Best in State" id="bo-horizontal-center">
       </div>
     </div>
 
     <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
-        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2021/04/2021-SHOOK-Badge-TopWomen-Color.png" alt="Forbes 2021 Top Women" id="bo-horizontal-center">
-      </div>
-    </div>
-
-
-    <div class="card bg-primary" style="margin-bottom: 0px;">
-      <div class="card-body text-center bo-vertical-center">
-        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2020/06/Barrons.png" alt="Barrons" class="bo-logo-smaller bo-horizontal-center">
+        <img src="https://brandywineoak.com/wp-content/uploads/2021/04/2021-SHOOK-Badge-TopWomen-Color.png" alt="Forbes 2021 Top Women" id="bo-horizontal-center">
       </div>
     </div>
 
     <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
-        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2020/06/Forbes2020.png" alt="Forbes 2020" id="bo-horizontal-center">
+        <img src="https://brandywineoak.com/wp-content/uploads/2020/06/Barrons.png" alt="Barrons" class="bo-logo-smaller bo-horizontal-center">
       </div>
     </div>
 
     <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
-        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2020/06/ForbesWomen2020.png" alt="Forbes Women 2020" id="bo-horizontal-center">
+        <img src="https://brandywineoak.com/wp-content/uploads/2020/06/Forbes2020.png" alt="Forbes 2020" id="bo-horizontal-center">
       </div>
     </div>
 
     <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
-        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2021/03/2020-Forbes-SR-2020-Top-Next-Gen-Wealth-Advisors.png" alt="Forbes Top Next Gen Wealth Advisors 2020" id="bo-horizontal-center">
+        <img src="https://brandywineoak.com/wp-content/uploads/2020/06/ForbesWomen2020.png" alt="Forbes Women 2020" id="bo-horizontal-center">
       </div>
     </div>
 
     <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
-        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2020/06/Forbes2019.png" alt="Forbes 2019" class="bo-logo" id="bo-horizontal-center">
-      </div>
-    </div>
-
-
-    <div class="card bg-primary" style="margin-bottom: 0px;">
-      <div class="card-body text-center bo-vertical-center">
-        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2020/08/Forbes2018.png" alt="Forbes 2018" class="bo-logo" id="bo-horizontal-center">
+        <img src="https://brandywineoak.com/wp-content/uploads/2021/03/2020-Forbes-SR-2020-Top-Next-Gen-Wealth-Advisors.png" alt="Forbes Top Next Gen Wealth Advisors 2020" id="bo-horizontal-center">
       </div>
     </div>
 
     <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
-        <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2020/06/Forbes2017.png" alt="Forbes 2018" class="bo-logo" id="bo-horizontal-center">
+        <img src="https://brandywineoak.com/wp-content/uploads/2020/06/Forbes2019.png" alt="Forbes 2019" class="bo-logo" id="bo-horizontal-center">
+      </div>
+    </div>
+
+    <div class="card bg-primary" style="margin-bottom: 0px;">
+      <div class="card-body text-center bo-vertical-center">
+        <img src="https://brandywineoak.com/wp-content/uploads/2020/08/Forbes2018.png" alt="Forbes 2018" class="bo-logo" id="bo-horizontal-center">
+      </div>
+    </div>
+
+    <div class="card bg-primary" style="margin-bottom: 0px;">
+      <div class="card-body text-center bo-vertical-center">
+        <img src="https://brandywineoak.com/wp-content/uploads/2020/06/Forbes2017.png" alt="Forbes 2018" class="bo-logo" id="bo-horizontal-center">
       </div>
     </div>
     
   </div>
 
 </div>
-
-
-
-
 </div>
     
-
 <?php 
-endwhile;
-get_footer();
+  endwhile;
+  get_footer();
 ?>
 
 <script>
+  var x = document.getElementById("video-content");
 
-var x = document.getElementById("video-content");
+  function lightbox_open_custom() {
+    document.getElementById("main-video").style.display = "block";
+    x.play();
+  }
 
-function lightbox_open_custom() {
-  document.getElementById("main-video").style.display = "block";
-  x.play();
-}
+  function lightbox_close_custom() {
+    document.getElementById("main-video").style.display = "none";
+    x.pause();
+  }
 
-function lightbox_close_custom() {
-  document.getElementById("main-video").style.display = "none";
-  x.pause();
-}
-
-function textSlideshowAppear() {
-  document.getElementById("textSlideshowOpacity").style.opacity = 1;
-}
-
+  function textSlideshowAppear() {
+    document.getElementById("textSlideshowOpacity").style.opacity = 1;
+  }
 </script>
