@@ -26,6 +26,14 @@
         position: relative;
         top: -0.1rem;
     }
+    article#post-1535 h1 {
+      font-size: 4rem;
+      position: relative;
+      top: 3.9rem;
+      font-family: 'Baskerville','Gerogia', Serif;
+      text-transform: initial;
+	  font-weight: 400;
+    }
     .core-content {
       max-width: 1300px;
       margin-left: auto;
@@ -44,6 +52,9 @@
       .entryBanner_content .row {
           top: 34vh;
       }
+	  article#post-1535 h1 {
+		top: 0;
+	  }
     }
     div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
         height: 120px;
@@ -121,6 +132,16 @@ var introElement = document.querySelector('#wpforms-1534-field_17-container');
 var header = document.createElement('h2');
 header.innerText = 'Tax Planning';
 introElement.prepend(header);
+	
+var subTitle = document.createElement('div');
+subTitle.innerText = "Please share any additional information related to your goals or areas where you are hoping we can assist.";
+subTitle.classList.add("wpforms-field-description");
+var otherGoalsLabel = document.createElement('label');
+otherGoalsLabel.innerText = "Other Goals";
+otherGoalsLabel.classList.add("wpforms-field-label");
+var otherGoals = document.querySelector("#wpforms-1534-field_22-container");
+otherGoals.prepend(subTitle);
+otherGoals.prepend(otherGoalsLabel);
 
 </script>
 
