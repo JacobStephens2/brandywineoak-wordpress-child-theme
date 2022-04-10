@@ -79,8 +79,8 @@
   <div class="entry-content">
 
     <div class="core-content">
-      <p>Prior to setting a complimentary introductory conversation, we ask that you complete the questions below. They help you identify goals and help us put together an accurate proposal for you. Plan on about 10 - 15 minutes to answer these questions. After we receive your submission, we will contact you to schedule a meeting.</p>
-      <p>Note: This is a secure form. Information submitted to us through this form is kept confidential. We do not ask for personal information such as date of birth or account details.</p>
+      <p>Prior to scheduling a complimentary introductory conversation, we ask that you complete the questionnaire below.  These questions are designed to help you better understand your overall financial picture.  This should take you no more than 10-15 minutes to complete.  Upon receipt our firm will be in touch within one business day to schedule your introductory call.</p>
+      <p>Note: This is a secure form. Information submitted through this form is kept confidential.</p>
       <?php echo do_shortcode('[wpforms id="1534"]'); ?>
     </div>
 
