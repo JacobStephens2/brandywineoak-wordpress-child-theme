@@ -20,36 +20,6 @@
   <?php include(locate_template('template-parts/shared/banner.php', false, false )); ?>
 
   <div class="entry-content">
-    <div class="contentBlock contentBlock--main" style="">
-      <div class="row column">
-        <h2>Our Solution</h2>
-        <div class="contentBlock_intro">
-          <p>
-            Specializing in solutions for corporate executives, both active and
-            retired, Brandywine Oak builds multi-generational relationships by
-            helping wealthy families simplify their financial decision-making
-            through comprehensive strategies that focus on intentional goals.
-          </p>
-        </div>
-        <div class="grid-x grid-margin-x grid-margin-y contentBlock_content">
-          <div class="cell small-12 medium-7 large-8 contentBlock_contentMain">
-            <p>
-              We will show you a &#8220;simple approach to a complex business&#8221; through
-              the education necessary to alleviate any anxiety over financial
-              decision-making, while enabling you to better experience the rewards
-              of your wealth.
-            </p>
-            <p>
-              Helping you to maximize your family&#8217;s enjoyment and financial
-              well-being now and in the future is a critical part of our service.
-            </p>
-          </div>
-          <div
-            class="cell small-12 medium-5 large-4 contentBlock_contentSidebar"
-          ></div>
-        </div>
-      </div>
-    </div>
 
     <section id="typical-client">
       <style>
