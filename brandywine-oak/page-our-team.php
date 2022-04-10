@@ -29,17 +29,3 @@
   endwhile; // End of the loop.
   get_footer();
 ?>
-
-<script>
-
-const teamImg = document.createElement("img")
-
-teamImg.src = "https://brandywineoak.com/wp-content/uploads/2022/01/brandywine-oak-team-photo-jan-17-2022-scaled.jpg"
-
-teamImg.style.paddingRight = "1rem";
-
-const headerText = document.querySelector('.contentBlock_intro');
-
-headerText.append(teamImg);
-
-</script>
