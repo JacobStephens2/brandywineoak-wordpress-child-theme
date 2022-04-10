@@ -98,7 +98,7 @@
             schedule an 15-minute introductory phone call.
           </p>
           <a href="/pre-meeting">
-            <button>Start Free Consultation</button>
+            <button>Start Pre-Meeting Questions</button>
           </a>
         </section>
       </div>
