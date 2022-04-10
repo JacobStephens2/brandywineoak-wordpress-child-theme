@@ -93,9 +93,9 @@
           <h2>Getting Started</h2>
           <p>
             Our services start by completing a set of online
-            <a href="/pre-meeting">Pre-Meeting Questions</a>. Once we receive those we
-            reach out to schedule a complimentary introductory meeting. All of our
-            services start with a complimentary&nbsp;consult.
+            <a href="/pre-meeting">Pre-Meeting Questions</a>. Once we 
+            receive your completed questionnaire, we will reach out to 
+            schedule an 15-minute introductory phone call.
           </p>
           <a href="/pre-meeting">
             <button>Start Free Consultation</button>
