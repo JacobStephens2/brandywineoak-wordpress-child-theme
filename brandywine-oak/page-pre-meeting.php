@@ -53,7 +53,7 @@
           top: 34vh;
       }
 	  article#post-1535 h1 {
-		top: 0;
+		top: -4rem;
 	  }
     }
     div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
