@@ -81,7 +81,7 @@
       </style>
       <section>
         <h2>Who is a typical Brandywine Oak Private Wealth&nbsp;client?</h2>
-        <p>Our typical client is someone age 50 plus with $1 million or more of investable financial&nbsp;assets.</p>
+        <p>Our typical client is someone age 50 plus with $2.5 million or more of investable financial&nbsp;assets.</p>
         <div class="qualities">
           <p>Prefer to delegate to an expert so you can go out and enjoy&nbsp;retirement</p>
           <p>Want to know your spouse will be in not just good, but great&nbsp;hands</p>
@@ -165,10 +165,7 @@
           experience it is far better to prepare than it is to repair.
         </p>
         <p>
-          The biggest void for families in investment advice is being
-          intentional around their finances. The conversation in our view has to
-          be around cash flow and lifestyle rather than short-term performance
-          and market commentary.
+          Investments are generally a matter of opinion around what the market may or may not do. Taxes are a matter of fact; not a tip from some stockbroker.
         </p>
       </div>
     </section>
