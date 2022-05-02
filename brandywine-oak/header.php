@@ -52,6 +52,7 @@
                     ?>
                     <div 
                         class="globalNav_wrap multilevel-offcanvas off-canvas in-canvas-for-large position-right clearfix"
+						style="float: right"
                         id="offCanvasRight"
                         data-js-component="globalNav"
                         data-off-canvas
@@ -63,7 +64,7 @@
                             <!-- Menu -->
                             <ul class="globalMenu">
                                 <!-- Logo -->
-                                <div class="logo">
+                                <div class="logo" style="float: left">
                                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" style="border-bottom: none;" rel="home">
                                         <?php include 'logo.svg'; ?>
                                     </a>
