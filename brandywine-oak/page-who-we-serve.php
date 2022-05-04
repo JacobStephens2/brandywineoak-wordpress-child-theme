@@ -81,7 +81,7 @@
       </style>
       <section>
         <h2>Who is a typical Brandywine Oak Private Wealth&nbsp;client?</h2>
-        <p>Our typical client is someone age 50 plus with $2.5 million or more of investable financial&nbsp;assets.</p>
+        <p>Our typical client is someone age 50+ with $2.5 million of investable liquid assets, who personally achieved financial success from years of hard work, sacrifice, and a high savings rate throughout their professional career.</p>
         <div class="qualities">
           <p>Prefer to delegate to an expert so you can go out and enjoy&nbsp;retirement</p>
           <p>Want to know your spouse will be in not just good, but great&nbsp;hands</p>
