@@ -44,6 +44,9 @@
           background-color: hsl(218deg 35% 24%);
           color: white;
         }
+        #typical-client h2+p {
+           font-size: 1.3rem;
+        }
         .dark h2 {
           color: white;
         }
