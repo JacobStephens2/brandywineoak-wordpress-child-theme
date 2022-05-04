@@ -54,7 +54,7 @@
             padding: 4rem 1rem 2.6rem;
         }
         #typical-client p {
-          max-width: 80ch;
+          max-width: 90ch;
         }
         #typical-client h2 {
             font-size: 2.6rem;
