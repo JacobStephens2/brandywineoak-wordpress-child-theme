@@ -12,7 +12,7 @@
  * @package Wyeth
  */
 
-  get_header();
+  get_template_part( 'template-parts/header-tax-advisory-navy-bar', 'page' );
   while ( have_posts() ) : the_post();
 ?>
 
