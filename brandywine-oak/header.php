@@ -45,6 +45,9 @@
                         aria-expanded="false"
                         aria-controls="offCanvasRight"
                     >
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </button>
                     <?php
                         $twitter  = get_field( 'twitter_url', 'options' );
