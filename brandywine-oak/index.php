@@ -9,9 +9,11 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Wyeth
+ * @package Brandywine Oak
  */
+
 get_header( 'special' ); 
+
 ?>
 
 <header class="entry-header entry-header--news">

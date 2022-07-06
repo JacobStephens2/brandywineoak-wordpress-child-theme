@@ -12,7 +12,7 @@
  * @package Wyeth
  */
 
-  get_header();
+  get_header('special');
   while ( have_posts() ) : the_post();
 ?>
 
