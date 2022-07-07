@@ -115,7 +115,7 @@
                   <p>Christopher Smith leads our Private Tax Advisory business and specializes in the tax complexities of navigating significant&nbsp;wealth</p>
                   <h2 class="subhead tax-education">Education/Experience:</h2>
                   <ul>
-                  <li>Certified Public Accountant&nbsp;(CPA)</li>
+                  <li>Certified Public Accountant&nbsp;(CPA)&#174;</li>
                   <li>Member of AICPA</li>
                   <li>Member of DSCPA</li>
                   <li>In-depth experience working alongside Brandywine Oak wealth advisors for over a&nbsp;decade</li>
