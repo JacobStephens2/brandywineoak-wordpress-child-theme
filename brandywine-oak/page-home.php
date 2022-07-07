@@ -226,6 +226,16 @@
   get_footer();
 ?>
 
+<style>
+  img#AliAndMike {
+      height: min(95vw, 485px);
+      margin-top: 0.6rem;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 2.5rem;
+  }
+</style>
+
 <script>
   var x = document.getElementById("video-content");
 
@@ -242,4 +252,15 @@
   function textSlideshowAppear() {
     document.getElementById("textSlideshowOpacity").style.opacity = 1;
   }
+
+  // Add image of Ali and Mike above paragraph on home page
+  let p = document.querySelector('.disclosure p:first-of-type');
+  let img = document.createElement('img');
+  img.src = 'https://brandywineoak.com/wp-content/uploads/2022/07/Alison-and-Michael-Hi-Res-scaled.jpg';
+  img.id = 'AliAndMike';
+  let div = document.createElement('div');
+  div.style.display = flex;
+  p.before(div);
+  div.append(img);
+
 </script>
