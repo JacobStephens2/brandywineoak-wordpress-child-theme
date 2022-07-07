@@ -191,8 +191,11 @@
                                         href="<?= $twitter ?>"><span>Twitter</span></a></li>
 						<?php endif; ?>
 						<?php if ( $linkedin ): ?>
-                            <li class="hide-for-large social social--linkedin"><a
-                                        href="<?= $linkedin ?>"><span>Linkedin</span></a></li>
+                            <li class="hide-for-large social social--linkedin">
+                                <a href="https://www.linkedin.com/company/brandywine-oak-private-tax-advisory/">
+                                    <span>Linkedin</span>
+                                </a>
+                            </li>
 						<?php endif; ?>
                     </ul>
                 </nav><!-- .globalNav -->
@@ -206,12 +209,20 @@
                         href="<?= $twitter ?>"><span>Twitter</span></a></li>
 		<?php endif; ?>
 		<?php if ( $linkedin ): ?>
-            <li style="text-align: center;" class="social social--linkedin"><a
-                        href="<?= $linkedin ?>"><span>Linkedin</span></a></li>
+            <li style="text-align: center;" class="social social--linkedin">
+                <a href="https://www.linkedin.com/company/brandywine-oak-private-tax-advisory/">
+                    <span>Linkedin</span>
+                </a>
+            </li>
 		<?php endif; ?>
-        <li class="social" style="line-height: 0;text-align: center;"><a target="_blank"
-                                                                         style="text-align: center; font-weight: bold;line-height: 18px!important;font-size: 0.85em;"
-                                                                         href="https://brokercheck.finra.org/">Broker<br>Check</a>
+        <li class="social" style="line-height: 0;text-align: center;">
+            <a 
+                target="_blank"
+                style="text-align: center; font-weight: bold;line-height: 18px!important;font-size: 0.85em;"
+                href="https://brokercheck.finra.org/"
+            >
+                Broker<br>Check
+            </a>
         </li>
 
     </ul>
