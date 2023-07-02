@@ -133,7 +133,7 @@
   <div class="bo-display-desktop">
     <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
-        <img src="https://brandywineoak.com/wp-content/uploads/2021/10/Accolades-Desktop-Sep21-smaller.jpg" alt="Row of Brandywine Oak Accolades" class="bo-horizontal-center">
+        <img src="/wp-content/uploads/2023/06/Accolades-Desktop-Jun23.jpg" alt="Row of Brandywine Oak Accolades" class="bo-horizontal-center">
       </div>
     </div>
   </div>
@@ -142,77 +142,138 @@
   <div class="bo-display-tablet">
     <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
-        <img src="https://brandywineoak.com/wp-content/uploads/2021/10/Accolades-Tablet_Sep21.jpg" alt="Two Rows of Brandywine Oak Accolades" class="bo-horizontal-center">
+        <img src="/wp-content/uploads/2023/06/Accolades-Tablet-Jun23-scaled.jpg" alt="Two Rows of Brandywine Oak Accolades" class="bo-horizontal-center">
       </div>
     </div>
   </div>
 
+	
+	
   <!-- Mobile view -->
+	
   <div class="bo-accolades-mobile">
+	  
+	<!-- 2023 Accolades Individual -->
 
+	 <div class="card bg-primary" style="margin-bottom: 0px;">
+      <div class="card-body text-center bo-vertical-center">
+        <img src="/wp-content/uploads/2023/07/2023BestInStateWealthAdvisors_Badge.png" alt="2023 Best in State Wealth Advisors" id="bo-horizontal-center">
+      </div>
+    </div>
+	  
+	 <div class="card bg-primary" style="margin-bottom: 0px;">
+      <div class="card-body text-center bo-vertical-center">
+        <img src="/wp-content/uploads/2023/07/2023-USAToday_BFAF.jpg" alt="2023 USA Today Financial Advisory Firms" id="bo-horizontal-center">
+      </div>
+    </div>
+	  
+	  	 <div class="card bg-primary" style="margin-bottom: 0px;">
+      <div class="card-body text-center bo-vertical-center">
+        <img src="/wp-content/uploads/2023/07/2023-Top1200Advisors_badge_CMYK.jpg" alt="2023 Barrons Top Financial Advisors" id="bo-horizontal-center">
+      </div>
+    </div>
+
+	  
+	 <div class="card bg-primary" style="margin-bottom: 0px;">
+      <div class="card-body text-center bo-vertical-center">
+        <img src="/wp-content/uploads/2023/07/2023-Forbes-Top-Women-Wealth-Advisors-Best-In-State.jpg" alt="2023 Forbes Top Women Wealth Advisors" id="bo-horizontal-center">
+      </div>
+    </div>
+
+	<!-- 2022 Accolades Individual -->
+	  
+	  <div class="card bg-primary" style="margin-bottom: 0px;">
+      <div class="card-body text-center bo-vertical-center">
+        <img src="/wp-content/uploads/2023/07/2022_ind_vert.png" alt="2022 Barrons Independent Advisors" id="bo-horizontal-center">
+      </div>
+    </div>
+	
+	<div class="card bg-primary" style="margin-bottom: 0px;">
+      <div class="card-body text-center bo-vertical-center">
+        <img src="/wp-content/uploads/2023/07/2022_1200_vert.png" alt="2022 Barrons Financial Advisors" id="bo-horizontal-center">
+      </div>
+    </div>
+	  
+	 <div class="card bg-primary" style="margin-bottom: 0px;">
+      <div class="card-body text-center bo-vertical-center">
+        <img src="/wp-content/uploads/2023/07/2022-Top-RIA-Logo-600x800-2.jpg" alt="2022 Forbes RIA Firms" id="bo-horizontal-center">
+      </div>
+    </div>
+	  
+	  <div class="card bg-primary" style="margin-bottom: 0px;">
+      <div class="card-body text-center bo-vertical-center">
+        <img src="/wp-content/uploads/2023/07/2022-Forbes-Top-Women-Wealth-Advisors.png" alt="2022 Forbes Top Women Wealth Advisors" id="bo-horizontal-center">
+      </div>
+    </div>
+	  
+	  
+	<div class="card bg-primary" style="margin-bottom: 0px;">
+      <div class="card-body text-center bo-vertical-center">
+        <img src="/wp-content/uploads/2023/07/2022-Forbes-Next-Gen-Wealth-Advisors-scaled.jpg" alt="2022 Forbes Next Gen Wealth Advisors" id="bo-horizontal-center">
+      </div>
+    </div>
+	  
+	  <div class="card bg-primary" style="margin-bottom: 0px;">
+      <div class="card-body text-center bo-vertical-center">
+        <img src="/wp-content/uploads/2023/07/2022-Forbes-Best-In-State.png" alt="2022 Forbes Best In State" id="bo-horizontal-center">
+      </div>
+    </div>
+	  
+	<!-- 2021 Accolades Individual -->
+	  
     <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
-        <img src="https://brandywineoak.com/wp-content/uploads/2021/10/SHOOK-Badge-NextGen-Color.jpg" alt="2021 Forbes Best-In-State Wealth Advisors" id="bo-horizontal-center">
+        <img src="/wp-content/uploads/2021/04/2021-Barrons-top1200.png" alt="2021 Barrons Top 1200" id="bo-horizontal-center">
+      </div>
+    </div>
+	  
+	  <div class="card bg-primary" style="margin-bottom: 0px;">
+      <div class="card-body text-center bo-vertical-center">
+        <img src="/wp-content/uploads/2023/07/2021-SHOOK-Badge-NextGen-Color.jpg" alt="2021 Next Gen Wealth Advisors" id="bo-horizontal-center">
       </div>
     </div>
 
     <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
-        <img src="https://brandywineoak.com/wp-content/uploads/2021/04/2021-Barrons-top1200.png" alt="2021 Barrons Top 1200" id="bo-horizontal-center">
+        <img src="/wp-content/uploads/2021/03/Forbes-2021-SHOOK-BestInState.jpg" alt="Forbes 2021 Best in State" id="bo-horizontal-center">
+      </div>
+    </div>
+
+	  	  <div class="card bg-primary" style="margin-bottom: 0px;">
+      <div class="card-body text-center bo-vertical-center">
+        <img src="/wp-content/uploads/2023/07/2021_ind_vert.png" alt="2021 Barrons Independent Advisors" id="bo-horizontal-center">
+      </div>
+    </div>
+	  
+    <div class="card bg-primary" style="margin-bottom: 0px;">
+      <div class="card-body text-center bo-vertical-center">
+        <img src="/wp-content/uploads/2021/04/2021-SHOOK-Badge-TopWomen-Color.png" alt="Forbes 2021 Top Women" id="bo-horizontal-center">
+      </div>
+    </div>
+	  
+	<!-- 2020 Accolades Individual -->
+
+    <div class="card bg-primary" style="margin-bottom: 0px;">
+      <div class="card-body text-center bo-vertical-center">
+        <img src="/wp-content/uploads/2023/06/2020_top1200_Barrons-new.png" alt="Barrons" class="bo-logo-smaller bo-horizontal-center">
       </div>
     </div>
 
     <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
-        <img src="https://brandywineoak.com/wp-content/uploads/2021/03/Forbes-2021-SHOOK-BestInState.jpg" alt="Forbes 2021 Best in State" id="bo-horizontal-center">
+        <img src="/wp-content/uploads/2020/06/Forbes2020.png" alt="Forbes 2020" id="bo-horizontal-center">
       </div>
     </div>
 
     <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
-        <img src="https://brandywineoak.com/wp-content/uploads/2021/04/2021-SHOOK-Badge-TopWomen-Color.png" alt="Forbes 2021 Top Women" id="bo-horizontal-center">
+        <img src="/wp-content/uploads/2020/06/ForbesWomen2020.png" alt="Forbes Women 2020" id="bo-horizontal-center">
       </div>
     </div>
 
     <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
-        <img src="https://brandywineoak.com/wp-content/uploads/2020/06/Barrons.png" alt="Barrons" class="bo-logo-smaller bo-horizontal-center">
-      </div>
-    </div>
-
-    <div class="card bg-primary" style="margin-bottom: 0px;">
-      <div class="card-body text-center bo-vertical-center">
-        <img src="https://brandywineoak.com/wp-content/uploads/2020/06/Forbes2020.png" alt="Forbes 2020" id="bo-horizontal-center">
-      </div>
-    </div>
-
-    <div class="card bg-primary" style="margin-bottom: 0px;">
-      <div class="card-body text-center bo-vertical-center">
-        <img src="https://brandywineoak.com/wp-content/uploads/2020/06/ForbesWomen2020.png" alt="Forbes Women 2020" id="bo-horizontal-center">
-      </div>
-    </div>
-
-    <div class="card bg-primary" style="margin-bottom: 0px;">
-      <div class="card-body text-center bo-vertical-center">
-        <img src="https://brandywineoak.com/wp-content/uploads/2021/03/2020-Forbes-SR-2020-Top-Next-Gen-Wealth-Advisors.png" alt="Forbes Top Next Gen Wealth Advisors 2020" id="bo-horizontal-center">
-      </div>
-    </div>
-
-    <div class="card bg-primary" style="margin-bottom: 0px;">
-      <div class="card-body text-center bo-vertical-center">
-        <img src="https://brandywineoak.com/wp-content/uploads/2020/06/Forbes2019.png" alt="Forbes 2019" class="bo-logo" id="bo-horizontal-center">
-      </div>
-    </div>
-
-    <div class="card bg-primary" style="margin-bottom: 0px;">
-      <div class="card-body text-center bo-vertical-center">
-        <img src="https://brandywineoak.com/wp-content/uploads/2020/08/Forbes2018.png" alt="Forbes 2018" class="bo-logo" id="bo-horizontal-center">
-      </div>
-    </div>
-
-    <div class="card bg-primary" style="margin-bottom: 0px;">
-      <div class="card-body text-center bo-vertical-center">
-        <img src="https://brandywineoak.com/wp-content/uploads/2020/06/Forbes2017.png" alt="Forbes 2018" class="bo-logo" id="bo-horizontal-center">
+        <img src="/wp-content/uploads/2023/06/2020-Forbes-SR-2020-Top-Next-Gen-Wealth-Advisors.png" alt="Forbes Top Next Gen Wealth Advisors 2020" id="bo-horizontal-center">
       </div>
     </div>
     
@@ -225,16 +286,6 @@
   endwhile;
   get_footer();
 ?>
-
-<style>
-  img#AliAndMike {
-      height: min(95vw, 485px);
-      margin-top: 0.6rem;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 2.5rem;
-  }
-</style>
 
 <script>
   var x = document.getElementById("video-content");
@@ -252,15 +303,4 @@
   function textSlideshowAppear() {
     document.getElementById("textSlideshowOpacity").style.opacity = 1;
   }
-
-  // Add image of Ali and Mike above paragraph on home page
-  let p = document.querySelector('.disclosure p:first-of-type');
-  let img = document.createElement('img');
-  img.src = 'https://brandywineoak.com/wp-content/uploads/2022/07/Alison-and-Michael-Hi-Res-scaled.jpg';
-  img.id = 'AliAndMike';
-  let div = document.createElement('div');
-  div.style.display = flex;
-  p.before(div);
-  div.append(img);
-
 </script>
