@@ -180,6 +180,10 @@ add_filter( 'image_send_to_editor',
   }
 , 10, 8 );
 
+function returnNull() {
+  return null;
+}
+
 /**
  * Remove Search
  */
@@ -191,10 +195,10 @@ function wpb_filter_query( $query, $error = true ) {
     if ( $error == true )
       $query->is_404 = true;
     }
-  }
-  add_action( 'parse_query', 'wpb_filter_query' );
-  add_filter( 'get_search_form', create_function( '$a', "return null;" )
-);
+}
+
+add_action( 'parse_query', 'wpb_filter_query' );
+add_filter( 'get_search_form', 'returnNull' );
 
 function remove_search_widget() {
   unregister_widget('WP_Widget_Search');
