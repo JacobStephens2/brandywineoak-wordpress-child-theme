@@ -18,15 +18,15 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   <style>
-    article#post-1535 .entryBanner {
+    article#post-1608 .entryBanner {
         height: 46vh;
     }
-    article#post-1535 h1 {
+    article#post-1608 h1 {
         font-size: 4rem;
         position: relative;
         top: -0.1rem;
     }
-    article#post-1535 h1 {
+    article#post-1608 h1 {
       font-size: 4rem;
       position: relative;
       top: 3.9rem;
@@ -52,7 +52,7 @@
       .entryBanner_content .row {
           top: 34vh;
       }
-	  article#post-1535 h1 {
+	  article#post-1608 h1 {
 		top: -4rem;
 	  }
     }
@@ -60,7 +60,7 @@
         height: 120px;
         color: black !important;
     }
-    form#wpforms-form-1534 h2 {
+    form#wpforms-form-1608 h2 {
         font-size: 1.7rem;
         margin-bottom: 0.4rem;
         margin-top: 0.4rem;
@@ -81,54 +81,54 @@
     <div class="core-content">
       <p>Prior to scheduling a complimentary introductory conversation, we ask that you complete the questionnaire below.  These questions are designed to help you better understand your overall financial picture.  This should take you no more than 10-15 minutes to complete.  Upon receipt our firm will be in touch within one business day to schedule your introductory call.</p>
       <p>Note: This is a secure form. Information submitted through this form is kept confidential.</p>
-      <?php echo do_shortcode('[wpforms id="1534"]'); ?>
+      <?php echo do_shortcode('[wpforms id="1608"]'); ?>
     </div>
 
   </div>
 
 <script>
   
-var introElement = document.querySelector('#wpforms-1534-field_19-container');
+var introElement = document.querySelector('#wpforms-1608-field_19-container');
 var header = document.createElement('h2');
 header.innerText = 'Basics';
 introElement.prepend(header);
 
-var introElement = document.querySelector('#wpforms-1534-field_23-container');
+var introElement = document.querySelector('#wpforms-1608-field_23-container');
 var header = document.createElement('h2');
 header.innerText = 'Company Benefits';
 introElement.prepend(header);
 
-var introElement = document.querySelector('#wpforms-1534-field_24-container');
+var introElement = document.querySelector('#wpforms-1608-field_24-container');
 var header = document.createElement('h2');
 header.innerText = 'Real Estate and Mortgages';
 introElement.prepend(header);
 
-var introElement = document.querySelector('#wpforms-1534-field_27-container');
+var introElement = document.querySelector('#wpforms-1608-field_27-container');
 var header = document.createElement('h2');
 header.innerText = 'Investments';
 introElement.prepend(header);
 
-var introElement = document.querySelector('#wpforms-1534-field_33-container');
+var introElement = document.querySelector('#wpforms-1608-field_33-container');
 var header = document.createElement('h2');
 header.innerText = 'Insurance';
 introElement.prepend(header);
 
-var introElement = document.querySelector('#wpforms-1534-field_37-container');
+var introElement = document.querySelector('#wpforms-1608-field_37-container');
 var header = document.createElement('h2');
 header.innerText = 'Retirement Readiness';
 introElement.prepend(header);
 
-var introElement = document.querySelector('#wpforms-1534-field_41-container');
+var introElement = document.querySelector('#wpforms-1608-field_41-container');
 var header = document.createElement('h2');
 header.innerText = 'Estate Planning';
 introElement.prepend(header);
 
-var introElement = document.querySelector('#wpforms-1534-field_44-container');
+var introElement = document.querySelector('#wpforms-1608-field_44-container');
 var header = document.createElement('h2');
 header.innerText = 'Life Transition';
 introElement.prepend(header);
 
-var introElement = document.querySelector('#wpforms-1534-field_17-container');
+var introElement = document.querySelector('#wpforms-1608-field_17-container');
 var header = document.createElement('h2');
 header.innerText = 'Tax Planning';
 introElement.prepend(header);
@@ -139,7 +139,7 @@ subTitle.classList.add("wpforms-field-description");
 var otherGoalsLabel = document.createElement('label');
 otherGoalsLabel.innerText = "Other Goals";
 otherGoalsLabel.classList.add("wpforms-field-label");
-var otherGoals = document.querySelector("#wpforms-1534-field_22-container");
+var otherGoals = document.querySelector("#wpforms-1608-field_22-container");
 otherGoals.prepend(subTitle);
 otherGoals.prepend(otherGoalsLabel);
 
