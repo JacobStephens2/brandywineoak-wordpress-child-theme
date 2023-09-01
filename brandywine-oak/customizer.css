@@ -1,26 +1,27 @@
 body {
 	background: #283854;
 }
-		div.logo {
-	    	float: left !important;
-			    position: fixed;
-    left: 3.125rem;
-		}
-		div.globalNav_wrap {
-			float: right !important;
-		}
+
+div.logo {
+	float: left !important;
+}
+
+div.globalNav_wrap {
+	float: right !important;
+}
+
 button.menu-toggle {
 	right: 2rem;
 }
 
 @media screen and (max-width: 1016px) {
-  header div.logo {
-    left: 1.875rem;
-  }
+	header div.logo {
+		left: 1.875rem;
+	}
 }
 
 @media screen and (max-width: 636px) {
-  header div.logo {
-    left: 1.25rem;
-  }
+	header div.logo {
+		left: 1.25rem;
+	}
 }
