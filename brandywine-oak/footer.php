@@ -38,12 +38,21 @@
           <nav class="legalNav">
             <ul class="legalMenu">
 
+              <li><a href="https://www.linkedin.com/company/brandywine-oak-private-wealth/" target="_blank" >LinkedIn</a></li>
+              <li><a href="https://brokercheck.finra.org/" target="_blank" >BrokerCheck</a></li>
               <li><a href="/privacy-policy">Privacy Policy</a></li>
 
               <!-- Link to Form CRS on homepage only -->
               <?php 
-                if( is_front_page())
-                  echo "<li><a href='wp-content/uploads/2021/10/Form-CRS-Document_Updated-August-11-2021-1.pdf'>Form CRS</a></li>";
+                if( is_front_page()) {
+                  ?>
+                  <li>
+                    <a href='wp-content/uploads/2021/10/Form-CRS-Document_Updated-August-11-2021-1.pdf'>
+                      Form CRS
+                    </a>
+                  </li>
+                  <?php
+                }
               ?>
 
               <!-- show disclosure in footer -->
