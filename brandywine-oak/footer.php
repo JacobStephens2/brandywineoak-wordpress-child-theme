@@ -47,7 +47,7 @@
                 if( is_front_page()) {
                   ?>
                   <li>
-                    <a href='wp-content/uploads/2021/10/Form-CRS-Document_Updated-August-11-2021-1.pdf'>
+                    <a href='/wp-content/uploads/2023/09/Brandywine-Oak-Form-CRS-September-2023.pdf'>
                       Form CRS
                     </a>
                   </li>
