@@ -235,38 +235,9 @@
 
       <section style="padding-bottom: 4.4rem;">
         <h2>How We Charge</h2>
-        <table>
-          <thead>
-            <tr>
-              <td>
-                Brandywine&nbsp;Oak Private&nbsp;Wealth<br>
-                Household&nbsp;Assets
-              </td>
-              <td style="vertical-align: top;">
-                Annual %
-                Advice&nbsp;Fee
-              </td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>First $1,000,000</td>
-              <td>1.40%</td>
-            </tr>
-            <tr>
-              <td>Next $2,000,000</td>
-              <td>0.90%</td>
-            </tr>
-            <tr>
-              <td>Next $7,000,000</td>
-              <td>0.70%</td>
-            </tr>
-            <tr>
-              <td>$10,000,000+</td>
-              <td>0.50% or Custom</td>
-            </tr>
-          </tbody>
-        </table>
+        <img src="/wp-content/uploads/2023/09/fee-schedule.png" 
+          alt="Brandywine Oak Private Wealth Fee Schedule"
+        >
       </section>
 
     </section>
