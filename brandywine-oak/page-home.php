@@ -146,7 +146,7 @@
   $ranking_disclosure_block = '
     <div class="card-body text-center bo-vertical-center third_party_ranking_disclosures_container">
       <a class="third_party_ranking_disclosures"
-        href="/wp-content/uploads/2023/09/Brandywine-Oak-Form-CRS-September-2023.pdf"
+        href="/wp-content/uploads/2023/10/3rd-party-ranking-disclosure.pdf"
         target="_blank"
         >
         3rd Party Ranking Disclosures
