@@ -8,4 +8,5 @@ twentytwentythree
 bootstrap.php
 index.php
 gpg.txt
-index.php.gpg
+backup
+gpg.txt.gpg

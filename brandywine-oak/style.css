@@ -722,3 +722,48 @@ screen and (min-width: 40em) {
     right: 24px;
   }
 }
+
+li#menu-item-1851 {
+  background-color: hsl(218.18deg 35.48% 24.31%);
+}
+
+#menu-item-1851 a {
+  color: white;
+}
+
+#menu-item-1851 a:hover {
+  cursor: pointer;
+}
+
+ul.globalMenu {
+  margin-top: 0.1rem;
+}
+
+ul.globalMenu li.menu-item a {
+  padding-top: 0.9rem !important;
+}
+
+.third_party_ranking_disclosures {
+  color: hsl(218.18deg 35.48% 24.31%);
+}
+
+.third_party_ranking_disclosures_container {
+  justify-content: flex-end;
+  margin-right: 4.9rem;
+  padding-top: 0;
+}
+
+@media screen and (max-width: 980px) {
+  .third_party_ranking_disclosures_container {
+    margin-right: 3.2rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .third_party_ranking_disclosures_container {
+    margin-right: 0.8rem;
+  }
+}
+
+.accolades_container {
+  padding-bottom: 0;
+}

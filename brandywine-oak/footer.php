@@ -38,6 +38,8 @@
           <nav class="legalNav">
             <ul class="legalMenu">
 
+              <li><a href="https://www.linkedin.com/company/brandywine-oak-private-wealth/" target="_blank" >LinkedIn</a></li>
+              <li><a href="https://brokercheck.finra.org/" target="_blank" >BrokerCheck</a></li>
               <li><a href="/privacy-policy">Privacy Policy</a></li>
 
               <!-- Link to Form CRS on homepage only -->

@@ -14,16 +14,20 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   <div class="bo-height">
     <header class="entry-header entryBanner _step_1" data-js-component="homeScroll">
-      <div class="entryBanner_banner" style="background-image:url(<?= $banner ?>);" data-js-component="bannerAnimate"></div>
-          <div class="entryBanner_content">
+      <div class="entryBanner_banner" style="background-image:url(<?php echo $banner ?>);" data-js-component="bannerAnimate">
+      </div>
+
+      <div class="entryBanner_content">
         <div class="entryBanner_contentInner">
           <div class="row column">
-            <div class="entryIntro bo-header-font"><?= $introduction ?></div>
+            <div class="entryIntro bo-header-font">
+              <?php echo $introduction ?>
+            </div>
             <h2 class="tagline">
-            <?= $subhead ?>
+              <?php echo $subhead ?>
             </h2>
             <?php if($learn_more_link): ?>
-              <a href="<?= $learn_more_link ?>" class="banner_link">Learn More</a>
+              <a href="<?php echo $learn_more_link ?>" class="banner_link">Learn More</a>
             <?php endif; ?>
           </div>
           <div class="svg_wrap" style="display: none;">
@@ -32,31 +36,33 @@
         </div>
       </div>
 
-      <?php
-        // Field Definitions
+      <?php // Field Definitions
         $slides = get_field('text_slideshow');
         if($slides):
       ?>
-        <div class="textSlideshow_block entryBanner_slideshow">
-          <div class="row column">
-            <div class="textSlideshow bo-mobile-slideshow" data-js-component="textSlideshow">
-              <?php foreach($slides as $slide): ?>
-                <div class="textSlideshow_slide">
-                  <p><?= $slide['slide_text']; ?></p>
-                </div>
-              <?php endforeach; ?>
-            </div>
+
+      <div class="textSlideshow_block entryBanner_slideshow">
+        <div class="row column">
+          <div class="textSlideshow bo-mobile-slideshow" data-js-component="textSlideshow">
+            <?php foreach($slides as $slide): ?>
+              <div class="textSlideshow_slide">
+                <p><?php echo $slide['slide_text']; ?></p>
+              </div>
+            <?php endforeach; ?>
           </div>
         </div>
+      </div>
+
       <?php endif; ?>
+
       <div class="entryBanner_nav">
         <a href="#" class="entryBanner_more"><span>More</span></a>
       </div>
-    </header>
-    
 
-  <!-- .entry-header -->
-  <div class="entry-content"></div>
+    </header>
+    <!-- .entry-header -->
+    <div class="entry-content"></div>
+  </div>
 </article>
 
 <!-- #post-<?php the_ID(); ?> -->
@@ -116,25 +122,46 @@
 </div>
 </div>
 
-  <!--/ video snapshot -->
-  <div id="main-video">
-    <span class="close-window" onclick="lightbox_close_custom();">X</span>
-      <div id="video-content" width="100%">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/arar9gRX37k?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-  </div>
+<!-- Video snapshot -->
+<div id="main-video">
+  <span class="close-window" onclick="lightbox_close_custom();">X</span>
+    <div id="video-content" width="100%">
+      <iframe width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/arar9gRX37k?rel=0" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen
+      ></iframe>
+    </div>
+</div>
 
 </div>
 
 <!-- Accolades -->
 <div class="card-group">
+
+  <?php
+  $ranking_disclosure_block = '
+    <div class="card-body text-center bo-vertical-center third_party_ranking_disclosures_container">
+      <a class="third_party_ranking_disclosures"
+        href="/wp-content/uploads/2023/09/Brandywine-Oak-Form-CRS-September-2023.pdf"
+        target="_blank"
+        >
+        3rd Party Ranking Disclosures
+      </a>
+    </div>
+  ';
+  ?>
   
   <!-- Desktop view -->
   <div class="bo-display-desktop">
     <div class="card bg-primary" style="margin-bottom: 0px;">
-      <div class="card-body text-center bo-vertical-center">
+      <div class="card-body text-center bo-vertical-center accolades_container">
         <img src="/wp-content/uploads/2023/07/Accolades-Desktop-Jun23-smaller-scaled.jpg" alt="Row of Brandywine Oak Accolades" class="bo-horizontal-center">
       </div>
+      <?php echo $ranking_disclosure_block; ?>
     </div>
   </div>
 
@@ -142,155 +169,157 @@
   <div class="bo-display-tablet">
     <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
-        <img src="/wp-content/uploads/2023/07/Accolades-Tablet-Jun23-smaller-scaled.jpg" alt="Two Rows of Brandywine Oak Accolades" class="bo-horizontal-center">
+        <img src="/wp-content/uploads/2023/07/Accolades-Tablet-Jun23-smaller-scaled.jpg" 
+          alt="Two Rows of Brandywine Oak Accolades" class="bo-horizontal-center">
       </div>
+      <?php echo $ranking_disclosure_block; ?>
     </div>
   </div>
-
-	
-	
+  
   <!-- Mobile view -->
-	
   <div class="bo-accolades-mobile">
-	  
-	<!-- 2023 Accolades Individual -->
+    <!-- 2023 Accolades Individual -->
 
-	 <div class="card bg-primary" style="margin-bottom: 0px;">
+    <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
         <img src="/wp-content/uploads/2023/08/2023BestInStateWealthAdvisors_Badge.png" alt="2023 Best in State Wealth Advisors" id="bo-horizontal-center">
       </div>
     </div>
-	  
-	 <div class="card bg-primary" style="margin-bottom: 0px;">
+      
+    <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
         <img src="/wp-content/uploads/2023/08/2023-USAToday_BFAF.jpg" alt="2023 USA Today Financial Advisory Firms" id="bo-horizontal-center">
       </div>
     </div>
-	  
-	  	 <div class="card bg-primary" style="margin-bottom: 0px;">
+      
+    <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
         <img src="/wp-content/uploads/2023/08/2023-Top1200Advisors_badge_CMYK.jpg" alt="2023 Barrons Top Financial Advisors" id="bo-horizontal-center">
       </div>
     </div>
-
-	  
-	 <div class="card bg-primary" style="margin-bottom: 0px;">
+      
+    <div class="card bg-primary" style="margin-bottom: 0px;">
       <div class="card-body text-center bo-vertical-center">
         <img src="/wp-content/uploads/2023/08/2023-Forbes-Top-Women-Wealth-Advisors-Best-In-State.jpg" alt="2023 Forbes Top Women Wealth Advisors" id="bo-horizontal-center">
       </div>
     </div>
 
-	<!-- 2022 Accolades Individual -->
-	  
-	  <div class="card bg-primary" style="margin-bottom: 0px;">
-      <div class="card-body text-center bo-vertical-center">
-        <img src="/wp-content/uploads/2023/08/2022_ind_vert.png" 
-        alt="2022 Barrons Independent Advisors" id="bo-horizontal-center">
+    <!-- 2022 Accolades Individual -->
+      
+      <div class="card bg-primary" style="margin-bottom: 0px;">
+        <div class="card-body text-center bo-vertical-center">
+          <img src="/wp-content/uploads/2023/08/2022_ind_vert.png" 
+          alt="2022 Barrons Independent Advisors" id="bo-horizontal-center">
+        </div>
       </div>
-    </div>
-	
-	<div class="card bg-primary" style="margin-bottom: 0px;">
-      <div class="card-body text-center bo-vertical-center">
-        <img src="/wp-content/uploads/2023/08/2022_1200_vert.png" 
-        alt="2022 Barrons Financial Advisors" id="bo-horizontal-center">
-      </div>
-    </div>
-	  
-	 <div class="card bg-primary" style="margin-bottom: 0px;">
-      <div class="card-body text-center bo-vertical-center">
-        <img src="/wp-content/uploads/2023/08/2022-Top-RIA-Logo-600x800-2.jpg" 
-        alt="2022 Forbes RIA Firms" id="bo-horizontal-center">
-      </div>
-    </div>
-	  
-	  <div class="card bg-primary" style="margin-bottom: 0px;">
-      <div class="card-body text-center bo-vertical-center">
-        <img src="/wp-content/uploads/2023/08/2022-Forbes-Top-Women-Wealth-Advisors.png" 
-        alt="2022 Forbes Top Women Wealth Advisors" id="bo-horizontal-center">
-      </div>
-    </div>
-	  
-	  
-	<div class="card bg-primary" style="margin-bottom: 0px;">
-      <div class="card-body text-center bo-vertical-center">
-        <img src="/wp-content/uploads/2023/08/2022-Forbes-Next-Gen-Wealth-Advisors.jpg" 
-        alt="2022 Forbes Next Gen Wealth Advisors" id="bo-horizontal-center">
-      </div>
-    </div>
-	  
-	  <div class="card bg-primary" style="margin-bottom: 0px;">
-      <div class="card-body text-center bo-vertical-center">
-        <img src="/wp-content/uploads/2023/08/2022-Forbes-Best-In-State.png" 
-          alt="2022 Forbes Best In State" id="bo-horizontal-center"
-        >
-      </div>
-    </div>
-	  
-	<!-- 2021 Accolades Individual -->
-	  
-    <div class="card bg-primary" style="margin-bottom: 0px;">
-      <div class="card-body text-center bo-vertical-center">
-        <img src="/wp-content/uploads/2023/08/2021-Barrons-top1200.png" alt="2021 Barrons Top 1200" id="bo-horizontal-center">
-      </div>
-    </div>
-	  
-	  <div class="card bg-primary" style="margin-bottom: 0px;">
-      <div class="card-body text-center bo-vertical-center">
-        <img src="/wp-content/uploads/2023/08/2021-SHOOK-Badge-NextGen-Color.jpg" alt="2021 Next Gen Wealth Advisors" id="bo-horizontal-center">
-      </div>
-    </div>
-
-    <div class="card bg-primary" style="margin-bottom: 0px;">
-      <div class="card-body text-center bo-vertical-center">
-        <img src="/wp-content/uploads/2023/08/2021-SHOOK-BestInState.jpg" alt="Forbes 2021 Best in State" id="bo-horizontal-center">
-      </div>
-    </div>
-
-	  	  <div class="card bg-primary" style="margin-bottom: 0px;">
-      <div class="card-body text-center bo-vertical-center">
-        <img src="/wp-content/uploads/2023/08/2021_ind_vert.png" alt="2021 Barrons Independent Advisors" id="bo-horizontal-center">
-      </div>
-    </div>
-	  
-    <div class="card bg-primary" style="margin-bottom: 0px;">
-      <div class="card-body text-center bo-vertical-center">
-        <img src="/wp-content/uploads/2023/08/2021-SHOOK-Badge-TopWomen-Color.png" alt="Forbes 2021 Top Women" id="bo-horizontal-center">
-      </div>
-    </div>
-	  
-	<!-- 2020 Accolades Individual -->
-
-    <div class="card bg-primary" style="margin-bottom: 0px;">
-      <div class="card-body text-center bo-vertical-center">
-        <img src="/wp-content/uploads/2023/08/2020_top1200_Barrons-new.png" 
-        alt="Barrons Top 1200 Advisors" class="bo-logo-smaller bo-horizontal-center">
-      </div>
-    </div>
-
-    <div class="card bg-primary" style="margin-bottom: 0px;">
-      <div class="card-body text-center bo-vertical-center">
-        <img src="/wp-content/uploads/2023/08/2020-Forbes-Best-In-State.png" 
-        alt="Forbes 2020 Best In State" id="bo-horizontal-center">
-      </div>
-    </div>
-
-    <div class="card bg-primary" style="margin-bottom: 0px;">
-      <div class="card-body text-center bo-vertical-center">
-        <img src="/wp-content/uploads/2023/08/2020-Forbes-Women.png" 
-        alt="Forbes Top Women Advisors 2020" id="bo-horizontal-center">
-      </div>
-    </div>
-
-    <div class="card bg-primary" style="margin-bottom: 0px;">
-      <div class="card-body text-center bo-vertical-center">
-        <img src="/wp-content/uploads/2023/08/2020-Forbes-SR-2020-Top-Next-Gen-Wealth-Advisors.png" 
-        alt="Forbes Top Next Gen Wealth Advisors 2020" id="bo-horizontal-center">
-      </div>
-    </div>
     
+      <div class="card bg-primary" style="margin-bottom: 0px;">
+        <div class="card-body text-center bo-vertical-center">
+          <img src="/wp-content/uploads/2023/08/2022_1200_vert.png" 
+          alt="2022 Barrons Financial Advisors" id="bo-horizontal-center">
+        </div>
+      </div>
+      
+      <div class="card bg-primary" style="margin-bottom: 0px;">
+        <div class="card-body text-center bo-vertical-center">
+          <img src="/wp-content/uploads/2023/08/2022-Top-RIA-Logo-600x800-2.jpg" 
+          alt="2022 Forbes RIA Firms" id="bo-horizontal-center">
+        </div>
+      </div>
+      
+      <div class="card bg-primary" style="margin-bottom: 0px;">
+        <div class="card-body text-center bo-vertical-center">
+          <img src="/wp-content/uploads/2023/08/2022-Forbes-Top-Women-Wealth-Advisors.png" 
+          alt="2022 Forbes Top Women Wealth Advisors" id="bo-horizontal-center">
+        </div>
+      </div>
+      
+      <div class="card bg-primary" style="margin-bottom: 0px;">
+        <div class="card-body text-center bo-vertical-center">
+          <img src="/wp-content/uploads/2023/08/2022-Forbes-Next-Gen-Wealth-Advisors.jpg" 
+          alt="2022 Forbes Next Gen Wealth Advisors" id="bo-horizontal-center">
+        </div>
+      </div>
+      
+      <div class="card bg-primary" style="margin-bottom: 0px;">
+        <div class="card-body text-center bo-vertical-center">
+          <img src="/wp-content/uploads/2023/08/2022-Forbes-Best-In-State.png" 
+            alt="2022 Forbes Best In State" id="bo-horizontal-center"
+          >
+        </div>
+      </div>
+    <!--  -->
+      
+    <!-- 2021 Accolades Individual -->
+      <div class="card bg-primary" style="margin-bottom: 0px;">
+        <div class="card-body text-center bo-vertical-center">
+          <img src="/wp-content/uploads/2023/08/2021-Barrons-top1200.png" alt="2021 Barrons Top 1200" id="bo-horizontal-center">
+        </div>
+      </div>
+      
+      <div class="card bg-primary" style="margin-bottom: 0px;">
+        <div class="card-body text-center bo-vertical-center">
+          <img src="/wp-content/uploads/2023/08/2021-SHOOK-Badge-NextGen-Color.jpg" alt="2021 Next Gen Wealth Advisors" id="bo-horizontal-center">
+        </div>
+      </div>
+
+      <div class="card bg-primary" style="margin-bottom: 0px;">
+        <div class="card-body text-center bo-vertical-center">
+          <img src="/wp-content/uploads/2023/08/2021-SHOOK-BestInState.jpg" alt="Forbes 2021 Best in State" id="bo-horizontal-center">
+        </div>
+      </div>
+
+          <div class="card bg-primary" style="margin-bottom: 0px;">
+        <div class="card-body text-center bo-vertical-center">
+          <img src="/wp-content/uploads/2023/08/2021_ind_vert.png" alt="2021 Barrons Independent Advisors" id="bo-horizontal-center">
+        </div>
+      </div>
+      
+      <div class="card bg-primary" style="margin-bottom: 0px;">
+        <div class="card-body text-center bo-vertical-center">
+          <img src="/wp-content/uploads/2023/08/2021-SHOOK-Badge-TopWomen-Color.png" alt="Forbes 2021 Top Women" id="bo-horizontal-center">
+        </div>
+      </div>
+    <!--  -->
+      
+    <!-- 2020 Accolades Individual -->
+      <div class="card bg-primary" style="margin-bottom: 0px;">
+        <div class="card-body text-center bo-vertical-center">
+          <img src="/wp-content/uploads/2023/08/2020_top1200_Barrons-new.png" 
+          alt="Barrons Top 1200 Advisors" class="bo-logo-smaller bo-horizontal-center">
+        </div>
+      </div>
+
+      <div class="card bg-primary" style="margin-bottom: 0px;">
+        <div class="card-body text-center bo-vertical-center">
+          <img src="/wp-content/uploads/2023/08/2020-Forbes-Best-In-State.png" 
+          alt="Forbes 2020 Best In State" id="bo-horizontal-center">
+        </div>
+      </div>
+
+      <div class="card bg-primary" style="margin-bottom: 0px;">
+        <div class="card-body text-center bo-vertical-center">
+          <img src="/wp-content/uploads/2023/08/2020-Forbes-Women.png" 
+          alt="Forbes Top Women Advisors 2020" id="bo-horizontal-center">
+        </div>
+      </div>
+
+      <div class="card bg-primary" style="margin-bottom: 0px;">
+        <div class="card-body text-center bo-vertical-center">
+          <img src="/wp-content/uploads/2023/08/2020-Forbes-SR-2020-Top-Next-Gen-Wealth-Advisors.png" 
+          alt="Forbes Top Next Gen Wealth Advisors 2020" id="bo-horizontal-center">
+        </div>
+      </div>
+    <!--  -->
+
+    <div class="card bg-primary" style="margin-bottom: 0px;">
+      <?php echo $ranking_disclosure_block; ?>
+    </div>
+      
   </div>
 
 </div>
+
 </div>
     
 <?php 
