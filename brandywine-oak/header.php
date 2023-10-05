@@ -5,6 +5,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  * @package Wyeth
  */
+
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?> class="_no_js">
@@ -31,6 +32,7 @@
 		<?php wp_head(); ?>
 	</head>
     <body <?php body_class(); ?>>
+           
         <div id="page" class="site off-canvas-content">
             <a class="skip-link show-for-sr" href="#content">
                 <?php esc_html_e( 'Skip to content', 'wyeth' ); ?>
