@@ -87,41 +87,6 @@
   </div>
 
 <script>
-  
-var introElement = document.querySelector('#wpforms-1608-field_19-container');
-var header = document.createElement('h2');
-header.innerText = 'Basics';
-introElement.prepend(header);
-
-var introElement = document.querySelector('#wpforms-1608-field_23-container');
-var header = document.createElement('h2');
-header.innerText = 'Company Benefits';
-introElement.prepend(header);
-
-var introElement = document.querySelector('#wpforms-1608-field_24-container');
-var header = document.createElement('h2');
-header.innerText = 'Real Estate and Mortgages';
-introElement.prepend(header);
-
-var introElement = document.querySelector('#wpforms-1608-field_27-container');
-var header = document.createElement('h2');
-header.innerText = 'Investments';
-introElement.prepend(header);
-
-var introElement = document.querySelector('#wpforms-1608-field_33-container');
-var header = document.createElement('h2');
-header.innerText = 'Insurance';
-introElement.prepend(header);
-
-var introElement = document.querySelector('#wpforms-1608-field_37-container');
-var header = document.createElement('h2');
-header.innerText = 'Retirement Readiness';
-introElement.prepend(header);
-
-var introElement = document.querySelector('#wpforms-1608-field_41-container');
-var header = document.createElement('h2');
-header.innerText = 'Estate Planning';
-introElement.prepend(header);
 
 var introElement = document.querySelector('#wpforms-1608-field_44-container');
 var header = document.createElement('h2');
